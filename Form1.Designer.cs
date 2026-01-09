@@ -42,8 +42,8 @@
             btnNewGame.FlatAppearance.BorderSize = 0;
             btnNewGame.FlatStyle = FlatStyle.Flat;
             btnNewGame.Font = new Font("Sans Serif Collection", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnNewGame.Location = new Point(74, 229);
-            btnNewGame.Margin = new Padding(2);
+            btnNewGame.Location = new Point(59, 183);
+            btnNewGame.Margin = new Padding(2, 2, 2, 2);
             btnNewGame.Name = "btnNewGame";
             btnNewGame.Size = new Size(264, 93);
             btnNewGame.TabIndex = 0;

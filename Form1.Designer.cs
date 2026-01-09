@@ -41,7 +41,7 @@
             btnNewGame.FlatStyle = FlatStyle.Flat;
             btnNewGame.Font = new Font("Sans Serif Collection", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnNewGame.Location = new Point(59, 183);
-            btnNewGame.Margin = new Padding(2, 2, 2, 2);
+            btnNewGame.Margin = new Padding(2);
             btnNewGame.Name = "btnNewGame";
             btnNewGame.Size = new Size(272, 72);
             btnNewGame.TabIndex = 0;
@@ -70,7 +70,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(btnNewGame);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "WER WIRD REICH";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace WerWirdReich
 {
-    public partial class NeuesSpiel : Form
+    public partial class Game : Form
     {
-        public NeuesSpiel()
+
+   
+
+        GameController meinSpiel;
+     
+        public Game()
         {
             InitializeComponent();
+        }
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            meinSpiel = new GameController(labelQuestion);
         }
     }
 }

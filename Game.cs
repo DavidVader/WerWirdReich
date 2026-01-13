@@ -13,8 +13,6 @@ namespace WerWirdReich
     public partial class Game : Form
     {
 
-   
-
         GameController meinSpiel;
      
         public Game()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WerWirdReich
 {
@@ -12,7 +13,7 @@ namespace WerWirdReich
         private System.Windows.Forms.Label lableQuestion;
         public GameController(object lableQuestion)
         {
-            this.lableQuestion = (Lable)lableQuestion;
+            this.lableQuestion = (Label)lableQuestion;
             this.lableQuestion.Text = "Dies ist ein Test";
         }
     }

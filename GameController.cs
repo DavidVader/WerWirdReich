@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace WerWirdReich
 {
-    internal class GameController
+    class GameController
     {
+        int level;
+        private System.Windows.Forms.Label lableQuestion;
+        public GameController(object lableQuestion)
+        {
+            this.lableQuestion = (Lable)lableQuestion;
+            this.lableQuestion.Text = "Dies ist ein Test";
+        }
     }
 }

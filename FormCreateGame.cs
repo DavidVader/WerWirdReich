@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace WerWirdReich
 {
-    public partial class Optionen : Form
+    public partial class FormCreateGame : Form
     {
-        public Optionen()
+        public FormCreateGame()
         {
             InitializeComponent();
+            FormClosing += CreateGame_FormClosing;
         }
+
+        private void CreateGame_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }
 }

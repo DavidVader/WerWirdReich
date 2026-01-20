@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace WerWirdReich
 {
-    public partial class Game : Form
+    public partial class FormGame : Form
     {
 
         GameController meinSpiel;
      
-        public Game()
+        public FormGame()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace WerWirdReich
 {
-    partial class Game
+    partial class FormGame
     {
         /// <summary>
         /// Required designer variable.
@@ -42,9 +42,10 @@
             // 
             // buttonPlay
             // 
-            buttonPlay.Location = new Point(330, 336);
+            buttonPlay.Location = new Point(412, 420);
+            buttonPlay.Margin = new Padding(4, 4, 4, 4);
             buttonPlay.Name = "buttonPlay";
-            buttonPlay.Size = new Size(94, 29);
+            buttonPlay.Size = new Size(118, 36);
             buttonPlay.TabIndex = 0;
             buttonPlay.Text = "Play";
             buttonPlay.UseVisualStyleBackColor = true;
@@ -53,89 +54,98 @@
             // labelQuestion
             // 
             labelQuestion.AutoSize = true;
-            labelQuestion.Location = new Point(330, 9);
+            labelQuestion.Location = new Point(412, 11);
+            labelQuestion.Margin = new Padding(4, 0, 4, 0);
             labelQuestion.Name = "labelQuestion";
-            labelQuestion.Size = new Size(54, 20);
+            labelQuestion.Size = new Size(66, 25);
             labelQuestion.TabIndex = 1;
             labelQuestion.Text = "Fragen";
             // 
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new Point(12, 9);
+            labelName.Location = new Point(15, 11);
+            labelName.Margin = new Padding(4, 0, 4, 0);
             labelName.Name = "labelName";
-            labelName.Size = new Size(50, 20);
+            labelName.Size = new Size(59, 25);
             labelName.TabIndex = 2;
             labelName.Text = "label1";
             // 
             // labelLevel
             // 
             labelLevel.AutoSize = true;
-            labelLevel.Location = new Point(157, 9);
+            labelLevel.Location = new Point(196, 11);
+            labelLevel.Margin = new Padding(4, 0, 4, 0);
             labelLevel.Name = "labelLevel";
-            labelLevel.Size = new Size(50, 20);
+            labelLevel.Size = new Size(59, 25);
             labelLevel.TabIndex = 3;
             labelLevel.Text = "label1";
             // 
             // labelCash
             // 
             labelCash.AutoSize = true;
-            labelCash.Location = new Point(508, 14);
+            labelCash.Location = new Point(635, 18);
+            labelCash.Margin = new Padding(4, 0, 4, 0);
             labelCash.Name = "labelCash";
-            labelCash.Size = new Size(50, 20);
+            labelCash.Size = new Size(59, 25);
             labelCash.TabIndex = 4;
             labelCash.Text = "label1";
             // 
             // buttonExit
             // 
-            buttonExit.Location = new Point(692, 9);
+            buttonExit.Location = new Point(865, 11);
+            buttonExit.Margin = new Padding(4, 4, 4, 4);
             buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(87, 34);
+            buttonExit.Size = new Size(109, 42);
             buttonExit.TabIndex = 5;
             buttonExit.Text = "button1";
             buttonExit.UseVisualStyleBackColor = true;
             // 
             // buttonA
             // 
-            buttonA.Location = new Point(180, 176);
+            buttonA.Location = new Point(225, 220);
+            buttonA.Margin = new Padding(4, 4, 4, 4);
             buttonA.Name = "buttonA";
-            buttonA.Size = new Size(204, 49);
+            buttonA.Size = new Size(255, 61);
             buttonA.TabIndex = 6;
             buttonA.Text = "button1";
             buttonA.UseVisualStyleBackColor = true;
             // 
             // buttonB
             // 
-            buttonB.Location = new Point(390, 176);
+            buttonB.Location = new Point(488, 220);
+            buttonB.Margin = new Padding(4, 4, 4, 4);
             buttonB.Name = "buttonB";
-            buttonB.Size = new Size(204, 49);
+            buttonB.Size = new Size(255, 61);
             buttonB.TabIndex = 7;
             buttonB.Text = "button2";
             buttonB.UseVisualStyleBackColor = true;
             // 
             // buttonC
             // 
-            buttonC.Location = new Point(180, 231);
+            buttonC.Location = new Point(225, 289);
+            buttonC.Margin = new Padding(4, 4, 4, 4);
             buttonC.Name = "buttonC";
-            buttonC.Size = new Size(204, 49);
+            buttonC.Size = new Size(255, 61);
             buttonC.TabIndex = 8;
             buttonC.Text = "button3";
             buttonC.UseVisualStyleBackColor = true;
             // 
             // buttonD
             // 
-            buttonD.Location = new Point(390, 231);
+            buttonD.Location = new Point(488, 289);
+            buttonD.Margin = new Padding(4, 4, 4, 4);
             buttonD.Name = "buttonD";
-            buttonD.Size = new Size(204, 49);
+            buttonD.Size = new Size(255, 61);
             buttonD.TabIndex = 9;
             buttonD.Text = "button4";
             buttonD.UseVisualStyleBackColor = true;
             // 
-            // Game
+            // FormGame
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1000, 562);
             Controls.Add(buttonD);
             Controls.Add(buttonC);
             Controls.Add(buttonB);
@@ -146,8 +156,9 @@
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
             Controls.Add(buttonPlay);
-            Name = "Game";
-            Text = "NeuesSpiel";
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "FormGame";
+            Text = "WER WIRD REICH";
             ResumeLayout(false);
             PerformLayout();
         }

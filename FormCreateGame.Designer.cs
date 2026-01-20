@@ -43,14 +43,14 @@
             cBoxPlayers.FormattingEnabled = true;
             cBoxPlayers.Location = new Point(119, 71);
             cBoxPlayers.Name = "cBoxPlayers";
-            cBoxPlayers.Size = new Size(182, 33);
+            cBoxPlayers.Size = new Size(197, 33);
             cBoxPlayers.TabIndex = 0;
             // 
             // tBoxPlayer
             // 
             tBoxPlayer.Location = new Point(450, 73);
             tBoxPlayer.Name = "tBoxPlayer";
-            tBoxPlayer.Size = new Size(150, 31);
+            tBoxPlayer.Size = new Size(225, 31);
             tBoxPlayer.TabIndex = 1;
             // 
             // checkBoxTimer
@@ -81,6 +81,7 @@
             btnStart.TabIndex = 4;
             btnStart.Text = "Spiel starten";
             btnStart.UseVisualStyleBackColor = true;
+            btnStart.Click += btnStart_Click;
             // 
             // label1
             // 

@@ -33,21 +33,21 @@
             labelName = new Label();
             labelLevel = new Label();
             labelCash = new Label();
-            buttonExit = new Button();
-            buttonA = new Button();
-            buttonB = new Button();
-            buttonC = new Button();
-            buttonD = new Button();
+            btnOption = new Button();
+            btnA = new Button();
+            btnB = new Button();
+            btnC = new Button();
+            btnD = new Button();
             SuspendLayout();
             // 
             // buttonPlay
             // 
             buttonPlay.Location = new Point(412, 420);
-            buttonPlay.Margin = new Padding(4, 4, 4, 4);
+            buttonPlay.Margin = new Padding(4);
             buttonPlay.Name = "buttonPlay";
             buttonPlay.Size = new Size(118, 36);
             buttonPlay.TabIndex = 0;
-            buttonPlay.Text = "Play";
+            buttonPlay.Text = "Spielen";
             buttonPlay.UseVisualStyleBackColor = true;
             buttonPlay.Click += buttonPlay_Click;
             // 
@@ -91,72 +91,76 @@
             labelCash.TabIndex = 4;
             labelCash.Text = "label1";
             // 
-            // buttonExit
+            // btnOption
             // 
-            buttonExit.Location = new Point(865, 11);
-            buttonExit.Margin = new Padding(4, 4, 4, 4);
-            buttonExit.Name = "buttonExit";
-            buttonExit.Size = new Size(109, 42);
-            buttonExit.TabIndex = 5;
-            buttonExit.Text = "button1";
-            buttonExit.UseVisualStyleBackColor = true;
+            btnOption.Location = new Point(865, 11);
+            btnOption.Margin = new Padding(4);
+            btnOption.Name = "btnOption";
+            btnOption.Size = new Size(109, 42);
+            btnOption.TabIndex = 5;
+            btnOption.Text = "Einstellungen";
+            btnOption.UseVisualStyleBackColor = true;
             // 
-            // buttonA
+            // btnA
             // 
-            buttonA.Location = new Point(225, 220);
-            buttonA.Margin = new Padding(4, 4, 4, 4);
-            buttonA.Name = "buttonA";
-            buttonA.Size = new Size(255, 61);
-            buttonA.TabIndex = 6;
-            buttonA.Text = "button1";
-            buttonA.UseVisualStyleBackColor = true;
+            btnA.Location = new Point(225, 220);
+            btnA.Margin = new Padding(4);
+            btnA.Name = "btnA";
+            btnA.Size = new Size(255, 61);
+            btnA.TabIndex = 6;
+            btnA.Text = "A";
+            btnA.UseVisualStyleBackColor = true;
+            btnA.Click += btnA_Click;
             // 
-            // buttonB
+            // btnB
             // 
-            buttonB.Location = new Point(488, 220);
-            buttonB.Margin = new Padding(4, 4, 4, 4);
-            buttonB.Name = "buttonB";
-            buttonB.Size = new Size(255, 61);
-            buttonB.TabIndex = 7;
-            buttonB.Text = "button2";
-            buttonB.UseVisualStyleBackColor = true;
+            btnB.Location = new Point(488, 220);
+            btnB.Margin = new Padding(4);
+            btnB.Name = "btnB";
+            btnB.Size = new Size(255, 61);
+            btnB.TabIndex = 7;
+            btnB.Text = "B";
+            btnB.UseVisualStyleBackColor = true;
+            btnB.Click += btnB_Click;
             // 
-            // buttonC
+            // btnC
             // 
-            buttonC.Location = new Point(225, 289);
-            buttonC.Margin = new Padding(4, 4, 4, 4);
-            buttonC.Name = "buttonC";
-            buttonC.Size = new Size(255, 61);
-            buttonC.TabIndex = 8;
-            buttonC.Text = "button3";
-            buttonC.UseVisualStyleBackColor = true;
+            btnC.Location = new Point(225, 289);
+            btnC.Margin = new Padding(4);
+            btnC.Name = "btnC";
+            btnC.Size = new Size(255, 61);
+            btnC.TabIndex = 8;
+            btnC.Text = "C";
+            btnC.UseVisualStyleBackColor = true;
+            btnC.Click += btnC_Click;
             // 
-            // buttonD
+            // btnD
             // 
-            buttonD.Location = new Point(488, 289);
-            buttonD.Margin = new Padding(4, 4, 4, 4);
-            buttonD.Name = "buttonD";
-            buttonD.Size = new Size(255, 61);
-            buttonD.TabIndex = 9;
-            buttonD.Text = "button4";
-            buttonD.UseVisualStyleBackColor = true;
+            btnD.Location = new Point(488, 289);
+            btnD.Margin = new Padding(4);
+            btnD.Name = "btnD";
+            btnD.Size = new Size(255, 61);
+            btnD.TabIndex = 9;
+            btnD.Text = "D";
+            btnD.UseVisualStyleBackColor = true;
+            btnD.Click += btnD_Click;
             // 
             // FormGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1000, 562);
-            Controls.Add(buttonD);
-            Controls.Add(buttonC);
-            Controls.Add(buttonB);
-            Controls.Add(buttonA);
-            Controls.Add(buttonExit);
+            Controls.Add(btnD);
+            Controls.Add(btnC);
+            Controls.Add(btnB);
+            Controls.Add(btnA);
+            Controls.Add(btnOption);
             Controls.Add(labelCash);
             Controls.Add(labelLevel);
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
             Controls.Add(buttonPlay);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FormGame";
             Text = "WER WIRD REICH";
             ResumeLayout(false);
@@ -170,10 +174,10 @@
         private Label labelName;
         private Label labelLevel;
         private Label labelCash;
-        private Button buttonExit;
-        private Button buttonA;
-        private Button buttonB;
-        private Button buttonC;
-        private Button buttonD;
+        private Button btnOption;
+        private Button btnA;
+        private Button btnB;
+        private Button btnC;
+        private Button btnD;
     }
 }

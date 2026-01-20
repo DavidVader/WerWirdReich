@@ -33,6 +33,7 @@
             pictureBox1 = new PictureBox();
             btnOption = new Button();
             btnQuit = new Button();
+            listBoxScoreBoard = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             btnGame.FlatAppearance.BorderSize = 0;
             btnGame.FlatStyle = FlatStyle.Flat;
             btnGame.Font = new Font("Sans Serif Collection", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnGame.Location = new Point(59, 182);
+            btnGame.Location = new Point(244, 216);
             btnGame.Margin = new Padding(2);
             btnGame.Name = "btnGame";
             btnGame.Size = new Size(264, 92);
@@ -67,7 +68,7 @@
             // 
             // btnOption
             // 
-            btnOption.Location = new Point(59, 291);
+            btnOption.Location = new Point(244, 325);
             btnOption.Name = "btnOption";
             btnOption.Size = new Size(264, 95);
             btnOption.TabIndex = 2;
@@ -77,13 +78,22 @@
             // 
             // btnQuit
             // 
-            btnQuit.Location = new Point(59, 413);
+            btnQuit.Location = new Point(244, 447);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(264, 95);
             btnQuit.TabIndex = 3;
             btnQuit.Text = "Beenden";
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += btnQuit_Click;
+            // 
+            // listBoxScoreBoard
+            // 
+            listBoxScoreBoard.FormattingEnabled = true;
+            listBoxScoreBoard.ItemHeight = 25;
+            listBoxScoreBoard.Location = new Point(607, 216);
+            listBoxScoreBoard.Name = "listBoxScoreBoard";
+            listBoxScoreBoard.Size = new Size(373, 329);
+            listBoxScoreBoard.TabIndex = 4;
             // 
             // FormMenu
             // 
@@ -92,6 +102,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1130, 712);
+            Controls.Add(listBoxScoreBoard);
             Controls.Add(btnQuit);
             Controls.Add(btnOption);
             Controls.Add(pictureBox1);
@@ -110,5 +121,6 @@
         private PictureBox pictureBox1;
         private Button btnOption;
         private Button btnQuit;
+        private ListBox listBoxScoreBoard;
     }
 }

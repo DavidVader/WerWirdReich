@@ -19,6 +19,10 @@ namespace WerWirdReich
         {
             this.lableQuestion = (Label)lableQuestion;
             this.lableQuestion.Text = "Dies ist ein Test";
+            //aktuallisierung von allem anderem
         }
+
+        //Erstelle funktionen um zufällige fragen zu generieren und wenn alles funktioniert auch die antwort möglichkeiten umsortieren.
+
     }
 }

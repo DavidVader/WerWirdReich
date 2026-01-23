@@ -29,6 +29,11 @@ namespace WerWirdReich.Services
                 return new List<Player>();
             }
         }
+        public static Player GetPlayer(string playerName)
+        {
+            var players = GetAllPlayers();
+            return players.FirstOrDefault(p => p.Name == playerName);
+        }
         public static bool CreatePlayer(Player newPlayer)
         {
             try
@@ -61,27 +66,6 @@ namespace WerWirdReich.Services
             };
 
             return CreatePlayer(player);
-        }
-        public static bool DeletePlayer(string playerName)
-        {
-            try
-            {
-                var players = GetAllPlayers();
-                var playerToRemove = players.FirstOrDefault(p => p.Name == playerName);
-
-                if (playerToRemove != null)
-                {
-                    players.Remove(playerToRemove);
-                    SaveAllPlayers(players);
-                    return true;
-                }
-
-                return false; // Player not found
-            }
-            catch
-            {
-                return false;
-            }
         }
         public static bool EditPlayer(string playerName, Player updatedPlayer)
         {
@@ -125,10 +109,26 @@ namespace WerWirdReich.Services
                 return false;
             }
         }
-        public static Player GetPlayer(string playerName)
+        public static bool DeletePlayer(string playerName)
         {
-            var players = GetAllPlayers();
-            return players.FirstOrDefault(p => p.Name == playerName);
+            try
+            {
+                var players = GetAllPlayers();
+                var playerToRemove = players.FirstOrDefault(p => p.Name == playerName);
+
+                if (playerToRemove != null)
+                {
+                    players.Remove(playerToRemove);
+                    SaveAllPlayers(players);
+                    return true;
+                }
+
+                return false; // Player not found
+            }
+            catch
+            {
+                return false;
+            }
         }
         private static void SaveAllPlayers(List<Player> players)
         {

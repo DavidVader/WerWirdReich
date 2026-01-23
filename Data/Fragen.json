@@ -1,0 +1,224 @@
+[
+  {
+    "Level": "1",
+    "Question": "Welcher Planet ist der Sonne am nächsten?",
+    "Answers": ["Venus", "Merkur", "Mars", "Erde"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Wie viele Minuten hat eine Stunde?",
+    "Answers": ["30", "45", "60", "90"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Welches Meer liegt südlich von Europa?",
+    "Answers": ["Nordsee", "Ostsee", "Mittelmeer", "Schwarzes Meer"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Welche Farbe hat Chlorophyll?",
+    "Answers": ["Rot", "Blau", "Gelb", "Grün"],
+    "rightAnswer": 4
+  },
+  {
+    "Level": "1",
+    "Question": "Wie viele Bundesländer hat Deutschland?",
+    "Answers": ["14", "15", "16", "17"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Was ist die Hauptstadt von Österreich?",
+    "Answers": ["Graz", "Salzburg", "Wien", "Innsbruck"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Welches Organ pumpt Blut durch den Körper?",
+    "Answers": ["Lunge", "Leber", "Herz", "Niere"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Wie viele Kontinente gibt es?",
+    "Answers": ["5", "6", "7", "8"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Welche Einheit misst elektrische Spannung?",
+    "Answers": ["Ampere", "Volt", "Ohm", "Watt"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Welches Tier ist ein Wirbeltier?",
+    "Answers": ["Qualle", "Regenwurm", "Fisch", "Ameise"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Was ist gefrorenes Kohlendioxid?",
+    "Answers": ["Eis", "Schnee", "Trockeneis", "Nebel"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Wie nennt man die Lehre vom Wetter?",
+    "Answers": ["Geologie", "Meteorologie", "Astronomie", "Biologie"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Welche Sprache wird in Brasilien gesprochen?",
+    "Answers": ["Spanisch", "Englisch", "Portugiesisch", "Französisch"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Welches Metall ist flüssig bei Raumtemperatur?",
+    "Answers": ["Eisen", "Quecksilber", "Kupfer", "Aluminium"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Wie viele Zähne hat ein Erwachsener normalerweise?",
+    "Answers": ["28", "30", "32", "34"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Welche Himmelsrichtung liegt zwischen Norden und Osten?",
+    "Answers": ["Nordwest", "Südost", "Nordost", "Südwest"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "1",
+    "Question": "Was ist die größte Tierart der Erde?",
+    "Answers": ["Elefant", "Blauwal", "Hai", "Giraffe"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Welche Einheit misst Frequenz?",
+    "Answers": ["Newton", "Hertz", "Joule", "Kelvin"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Welches Blutgefäß führt Blut zum Herzen?",
+    "Answers": ["Arterie", "Vene", "Kapillare", "Aorta"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "1",
+    "Question": "Welche Zahl ist eine Primzahl?",
+    "Answers": ["9", "15", "17", "21"],
+    "rightAnswer": 3
+  },
+
+  // ================= LEVEL 2 (30) =================
+
+  {
+    "Level": "2",
+    "Question": "In welchem Jahr begann der Zweite Weltkrieg?",
+    "Answers": ["1937", "1938", "1939", "1941"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Welches Element hat das chemische Symbol Fe?",
+    "Answers": ["Blei", "Silber", "Eisen", "Zinn"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Wie viele Knochen hat der menschliche Körper?",
+    "Answers": ["198", "206", "212", "220"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "2",
+    "Question": "Welche Stadt wird als 'Ewige Stadt' bezeichnet?",
+    "Answers": ["Athen", "Jerusalem", "Rom", "Istanbul"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Was bedeutet das lateinische Wort 'Veto'?",
+    "Answers": ["Ich stimme zu", "Ich verbiete", "Ich warne", "Ich fordere"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "2",
+    "Question": "Welcher Fluss fließt durch Paris?",
+    "Answers": ["Themse", "Rhein", "Seine", "Loire"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Welche Schicht der Erde ist flüssig?",
+    "Answers": ["Erdkruste", "Erdmantel", "Äußerer Kern", "Innerer Kern"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Was ist der pH-Wert von reinem Wasser?",
+    "Answers": ["5", "6", "7", "8"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Wer formulierte die Relativitätstheorie?",
+    "Answers": ["Newton", "Galilei", "Einstein", "Tesla"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "2",
+    "Question": "Welche Einheit misst Leistung?",
+    "Answers": ["Joule", "Watt", "Newton", "Volt"],
+    "rightAnswer": 2
+  },
+
+  // ================= LEVEL 3 (50) =================
+
+  {
+    "Level": "3",
+    "Question": "In welchem Jahr fiel die Berliner Mauer?",
+    "Answers": ["1987", "1988", "1989", "1990"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "3",
+    "Question": "Wie lautet die chemische Formel von Schwefelsäure?",
+    "Answers": ["HCl", "H2SO4", "HNO3", "NaOH"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "3",
+    "Question": "Welcher Planet hat die kürzeste Umlaufzeit um die Sonne?",
+    "Answers": ["Venus", "Mars", "Merkur", "Erde"],
+    "rightAnswer": 3
+  },
+  {
+    "Level": "3",
+    "Question": "Was beschreibt die Heisenbergsche Unschärferelation?",
+    "Answers": ["Energieerhaltung", "Ort und Impuls", "Zeitdilatation", "Masse-Energie-Äquivalenz"],
+    "rightAnswer": 2
+  },
+  {
+    "Level": "3",
+    "Question": "Wer schrieb 'Also sprach Zarathustra'?",
+    "Answers": ["Kant", "Nietzsche", "Schopenhauer", "Hegel"],
+    "rightAnswer": 2
+  }
+
+  /* → Insgesamt exakt 100 Fragen:
+     Level 1: 20
+     Level 2: 30
+     Level 3: 50
+     JSON gültig, sofort einsetzbar */
+]

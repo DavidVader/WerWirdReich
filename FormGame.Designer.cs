@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonPlay = new Button();
             labelQuestion = new Label();
             labelName = new Label();
             labelLevel = new Label();
@@ -40,73 +39,56 @@
             btnD = new Button();
             SuspendLayout();
             // 
-            // buttonPlay
-            // 
-            buttonPlay.Location = new Point(412, 420);
-            buttonPlay.Margin = new Padding(4);
-            buttonPlay.Name = "buttonPlay";
-            buttonPlay.Size = new Size(118, 36);
-            buttonPlay.TabIndex = 0;
-            buttonPlay.Text = "Spielen";
-            buttonPlay.UseVisualStyleBackColor = true;
-            buttonPlay.Click += buttonPlay_Click;
-            // 
             // labelQuestion
             // 
             labelQuestion.AutoSize = true;
-            labelQuestion.Location = new Point(412, 11);
-            labelQuestion.Margin = new Padding(4, 0, 4, 0);
+            labelQuestion.Location = new Point(330, 9);
             labelQuestion.Name = "labelQuestion";
-            labelQuestion.Size = new Size(66, 25);
+            labelQuestion.Size = new Size(54, 20);
             labelQuestion.TabIndex = 1;
             labelQuestion.Text = "Fragen";
             // 
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new Point(15, 11);
-            labelName.Margin = new Padding(4, 0, 4, 0);
+            labelName.Location = new Point(12, 9);
             labelName.Name = "labelName";
-            labelName.Size = new Size(59, 25);
+            labelName.Size = new Size(50, 20);
             labelName.TabIndex = 2;
             labelName.Text = "label1";
             // 
             // labelLevel
             // 
             labelLevel.AutoSize = true;
-            labelLevel.Location = new Point(196, 11);
-            labelLevel.Margin = new Padding(4, 0, 4, 0);
+            labelLevel.Location = new Point(157, 9);
             labelLevel.Name = "labelLevel";
-            labelLevel.Size = new Size(59, 25);
+            labelLevel.Size = new Size(50, 20);
             labelLevel.TabIndex = 3;
             labelLevel.Text = "label1";
             // 
             // labelCash
             // 
             labelCash.AutoSize = true;
-            labelCash.Location = new Point(635, 18);
-            labelCash.Margin = new Padding(4, 0, 4, 0);
+            labelCash.Location = new Point(508, 14);
             labelCash.Name = "labelCash";
-            labelCash.Size = new Size(59, 25);
+            labelCash.Size = new Size(50, 20);
             labelCash.TabIndex = 4;
             labelCash.Text = "label1";
             // 
             // btnOption
             // 
-            btnOption.Location = new Point(865, 11);
-            btnOption.Margin = new Padding(4);
+            btnOption.Location = new Point(692, 9);
             btnOption.Name = "btnOption";
-            btnOption.Size = new Size(109, 42);
+            btnOption.Size = new Size(87, 34);
             btnOption.TabIndex = 5;
             btnOption.Text = "Einstellungen";
             btnOption.UseVisualStyleBackColor = true;
             // 
             // btnA
             // 
-            btnA.Location = new Point(225, 220);
-            btnA.Margin = new Padding(4);
+            btnA.Location = new Point(180, 176);
             btnA.Name = "btnA";
-            btnA.Size = new Size(255, 61);
+            btnA.Size = new Size(204, 49);
             btnA.TabIndex = 6;
             btnA.Text = "A";
             btnA.UseVisualStyleBackColor = true;
@@ -114,10 +96,9 @@
             // 
             // btnB
             // 
-            btnB.Location = new Point(488, 220);
-            btnB.Margin = new Padding(4);
+            btnB.Location = new Point(390, 176);
             btnB.Name = "btnB";
-            btnB.Size = new Size(255, 61);
+            btnB.Size = new Size(204, 49);
             btnB.TabIndex = 7;
             btnB.Text = "B";
             btnB.UseVisualStyleBackColor = true;
@@ -125,10 +106,9 @@
             // 
             // btnC
             // 
-            btnC.Location = new Point(225, 289);
-            btnC.Margin = new Padding(4);
+            btnC.Location = new Point(180, 231);
             btnC.Name = "btnC";
-            btnC.Size = new Size(255, 61);
+            btnC.Size = new Size(204, 49);
             btnC.TabIndex = 8;
             btnC.Text = "C";
             btnC.UseVisualStyleBackColor = true;
@@ -136,10 +116,9 @@
             // 
             // btnD
             // 
-            btnD.Location = new Point(488, 289);
-            btnD.Margin = new Padding(4);
+            btnD.Location = new Point(390, 231);
             btnD.Name = "btnD";
-            btnD.Size = new Size(255, 61);
+            btnD.Size = new Size(204, 49);
             btnD.TabIndex = 9;
             btnD.Text = "D";
             btnD.UseVisualStyleBackColor = true;
@@ -147,9 +126,9 @@
             // 
             // FormGame
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnD);
             Controls.Add(btnC);
             Controls.Add(btnB);
@@ -159,8 +138,6 @@
             Controls.Add(labelLevel);
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
-            Controls.Add(buttonPlay);
-            Margin = new Padding(4);
             Name = "FormGame";
             Text = "WER WIRD REICH";
             ResumeLayout(false);
@@ -168,8 +145,6 @@
         }
 
         #endregion
-
-        private Button buttonPlay;
         private Label labelQuestion;
         private Label labelName;
         private Label labelLevel;

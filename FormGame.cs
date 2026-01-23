@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WerWirdReich.Models;
 
 namespace WerWirdReich
 {
@@ -22,15 +25,11 @@ namespace WerWirdReich
             //Erhalte / Setze ein: Daten von GameControl
         }
 
-        private void buttonPlay_Click(object sender, EventArgs e)
-        {
-            meinSpiel = new GameController(labelQuestion);
-        }
-
         private void btnA_Click(object sender, EventArgs e)
         {
             //Sende Ergebniss 0 an GameControl.
             //Update Daten (label, button, ...)
+            meinSpiel = new GameController(labelQuestion, 1, 1000000, btnA, btnB, btnC, btnD);
         }
         private void btnB_Click(object sender, EventArgs e)
         {

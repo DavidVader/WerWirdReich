@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WerWirdReich
 {
     public partial class FormOption : Form
     {
+        private FormMenu menu;
+
         public FormOption()
         {
             InitializeComponent();
@@ -25,5 +28,12 @@ namespace WerWirdReich
          * ~ David
          */
         private void Optionen_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            menu = new FormMenu();
+            menu.Show();
+            this.Hide();
+        }
     }
 }

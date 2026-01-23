@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnBack = new Button();
             SuspendLayout();
+            // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(552, 12);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(76, 32);
+            btnBack.TabIndex = 0;
+            btnBack.Text = "Zurück";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // FormOption
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(640, 360);
+            Controls.Add(btnBack);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FormOption";
             Text = "Einstellungen";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnBack;
     }
 }

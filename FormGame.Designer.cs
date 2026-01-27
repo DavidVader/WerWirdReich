@@ -37,6 +37,9 @@
             btnB = new Button();
             btnC = new Button();
             btnD = new Button();
+            btnJoker1 = new Button();
+            btnJoker2 = new Button();
+            btnJoker3 = new Button();
             SuspendLayout();
             // 
             // labelQuestion
@@ -124,11 +127,41 @@
             btnD.UseVisualStyleBackColor = true;
             btnD.Click += btnD_Click;
             // 
+            // btnJoker1
+            // 
+            btnJoker1.Location = new Point(12, 111);
+            btnJoker1.Name = "btnJoker1";
+            btnJoker1.Size = new Size(94, 29);
+            btnJoker1.TabIndex = 10;
+            btnJoker1.Text = "button1";
+            btnJoker1.UseVisualStyleBackColor = true;
+            // 
+            // btnJoker2
+            // 
+            btnJoker2.Location = new Point(12, 161);
+            btnJoker2.Name = "btnJoker2";
+            btnJoker2.Size = new Size(94, 29);
+            btnJoker2.TabIndex = 11;
+            btnJoker2.Text = "button2";
+            btnJoker2.UseVisualStyleBackColor = true;
+            // 
+            // btnJoker3
+            // 
+            btnJoker3.Location = new Point(12, 213);
+            btnJoker3.Name = "btnJoker3";
+            btnJoker3.Size = new Size(94, 29);
+            btnJoker3.TabIndex = 12;
+            btnJoker3.Text = "button3";
+            btnJoker3.UseVisualStyleBackColor = true;
+            // 
             // FormGame
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnJoker3);
+            Controls.Add(btnJoker2);
+            Controls.Add(btnJoker1);
             Controls.Add(btnD);
             Controls.Add(btnC);
             Controls.Add(btnB);
@@ -154,5 +187,8 @@
         private Button btnB;
         private Button btnC;
         private Button btnD;
+        private Button btnJoker1;
+        private Button btnJoker2;
+        private Button btnJoker3;
     }
 }

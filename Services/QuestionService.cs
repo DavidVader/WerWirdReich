@@ -10,36 +10,30 @@ namespace WerWirdReich.Services
 {
     internal class QuestionService
     {
-        public List<Questions> getQuestions()
+        public List<Questions> GetQuestions()
         {
-            List<Questions> tempListeJS = new List<Questions>();
-            List<Questions> returnListeJS = new List<Questions>();
-            Random rnd = new Random();
+            string path = Path.Combine(AppContext.BaseDirectory, "Data", "Fragen.json");
+            string jsonString = File.ReadAllText(path);
 
-            int zahl;
-            int zahlOffset = 0;
-
-            string jsonString = File.ReadAllText("Data/Fragen.json");
-
-            List<Questions> allQuestions = JsonSerializer.Deserialize<List<Questions>>(jsonString);
-
-            for (int i = 0; i <= 3; i++)
+            var options = new JsonSerializerOptions
             {
-                tempListeJS.Clear();
+                PropertyNameCaseInsensitive = true
+            };
 
-                for (int z = 0; z <= 2; z++)
-                {
-                    Questions frage = allQuestions[zahlOffset + z];
-                    tempListeJS.Add(frage);
-                }
+            List<Questions> allQuestions = JsonSerializer.Deserialize<List<Questions>>(jsonString, options);
 
-                zahlOffset += 3;
+            Random rnd = new Random();
+            List<Questions> result = new List<Questions>();
 
-                zahl = rnd.Next(3);
-                returnListeJS.Add(tempListeJS[zahl]);
+            var grouped = allQuestions.GroupBy(q => q.Level);
+
+            foreach (var group in grouped)
+            {
+                var list = group.ToList();
+                result.Add(list[rnd.Next(list.Count)]);
             }
 
-            return returnListeJS;
+            return result;
         }
 
     }

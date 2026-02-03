@@ -16,20 +16,17 @@ namespace WerWirdReich
         private Random random;
         private Player player;
         private int cash;
-        private System.Windows.Forms.Button btnA, btnB, btnC, btnD;
+        private System.Windows.Forms.Button btnSender;
         private List<Questions> questions;
         private QuestionService questionService;
         private int round;
 
-        public GameController(object question, int round, int cash, object btnA, object btnB, object btnC, object btnD)
+        public GameController(object question, int round, int cash, object btnSender)
         {
             this.lableQuestion = (Label)question;
             this.round = round;
             this.cash = cash;
-            this.btnA = (Button)btnA;
-            this.btnB = (Button)btnB;
-            this.btnC = (Button)btnC;
-            this.btnD = (Button)btnD;
+            this.btnSender = (Button)btnSender;
 
             this.questionService = new QuestionService();
             this.questions = new List<Questions>();
@@ -39,6 +36,25 @@ namespace WerWirdReich
             if (round > 6) level = 2;
             this.lableQuestion.Text = this.questions[level].Question.ToString();
 
+            if (this.btnSender.Name == "btnA")
+            {
+                this.btnSender.Text = this.questions[level].Answers[0].ToString();
+            }
+
+            if (this.btnSender.Name == "btnB")
+            {
+                this.btnSender.Text = this.questions[level].Answers[0].ToString();
+            }
+
+            if (this.btnSender.Name == "btnC")
+            {
+                this.btnSender.Text = this.questions[level].Answers[0].ToString();
+            }
+
+            if (this.btnSender.Name == "btnD")
+            {
+                this.btnSender.Text = this.questions[level].Answers[0].ToString();
+            }
 
 
             //aktuallisierung von allem anderem

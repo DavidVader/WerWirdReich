@@ -95,7 +95,7 @@
             btnA.TabIndex = 6;
             btnA.Text = "A";
             btnA.UseVisualStyleBackColor = true;
-            btnA.Click += btnA_Click;
+            btnA.Click += btnClickController;
             // 
             // btnB
             // 
@@ -105,7 +105,7 @@
             btnB.TabIndex = 7;
             btnB.Text = "B";
             btnB.UseVisualStyleBackColor = true;
-            btnB.Click += btnB_Click;
+            btnB.Click += btnClickController;
             // 
             // btnC
             // 
@@ -115,7 +115,7 @@
             btnC.TabIndex = 8;
             btnC.Text = "C";
             btnC.UseVisualStyleBackColor = true;
-            btnC.Click += btnC_Click;
+            btnC.Click += btnClickController;
             // 
             // btnD
             // 
@@ -125,7 +125,7 @@
             btnD.TabIndex = 9;
             btnD.Text = "D";
             btnD.UseVisualStyleBackColor = true;
-            btnD.Click += btnD_Click;
+            btnD.Click += btnClickController;
             // 
             // btnJoker1
             // 

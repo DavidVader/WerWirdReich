@@ -30,7 +30,7 @@ namespace WerWirdReich
         {
             //Sende Ergebniss 0 an GameControl.
             //Update Daten (label, button, ...)
-            meinSpiel = new GameController(labelQuestion, round, 1, 1000000, btnA, btnB, btnC, btnD);
+            meinSpiel = new GameController(labelQuestion, round, 1000000, btnA, btnB, btnC, btnD);
             round++;
 
         }
@@ -38,21 +38,21 @@ namespace WerWirdReich
         {
             //Sende Ergebniss 1 an GameControl.
             //Update Daten (label, button, ...)
-            meinSpiel = new GameController(labelQuestion, round, 1, 1000000, btnA, btnB, btnC, btnD);
+            meinSpiel = new GameController(labelQuestion, round, 1000000, btnA, btnB, btnC, btnD);
             round++;
         }
         private void btnC_Click(object sender, EventArgs e)
         {
             //Sende Ergebniss 2 an GameControl.
             //Update Daten (label, button, ...)
-            meinSpiel = new GameController(labelQuestion, round, 1, 1000000, btnA, btnB, btnC, btnD);
+            meinSpiel = new GameController(labelQuestion, round, 1000000, btnA, btnB, btnC, btnD);
             round++;
         }
         private void btnD_Click(object sender, EventArgs e)
         {
             //Sende Ergebniss 3 an GameControl.
             //Update Daten (label, button, ...)
-            meinSpiel = new GameController(labelQuestion, round, 1, 1000000, btnA, btnB, btnC, btnD);
+            meinSpiel = new GameController(labelQuestion, round, 1000000, btnA, btnB, btnC, btnD);
             round++;
         }
 

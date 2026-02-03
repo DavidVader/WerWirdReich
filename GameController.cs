@@ -21,22 +21,23 @@ namespace WerWirdReich
         private QuestionService questionService;
         private int round;
 
-        public GameController(object question, int round, int level, int cash, object btnA, object btnB, object btnC, object btnD)
+        public GameController(object question, int round, int cash, object btnA, object btnB, object btnC, object btnD)
         {
             this.lableQuestion = (Label)question;
-            this.lableQuestion.Text = "Dies ist ein Test";
-            this.level = level;
             this.round = round;
             this.cash = cash;
-            this.btnA = (Button) btnA;
-            this.btnB = (Button) btnB;
-            this.btnC = (Button) btnC;
-            this.btnD = (Button) btnD;
+            this.btnA = (Button)btnA;
+            this.btnB = (Button)btnB;
+            this.btnC = (Button)btnC;
+            this.btnD = (Button)btnD;
 
             this.questionService = new QuestionService();
             this.questions = new List<Questions>();
             this.questions = this.questionService.GetQuestions();
-            this.lableQuestion.Text = this.questions[round].Question.ToString();
+            if (round <= 3) level = 0;
+            if (round > 3 && round <= 6) level = 1;
+            if (round > 6) level = 2;
+            this.lableQuestion.Text = this.questions[level].Question.ToString();
 
 
 

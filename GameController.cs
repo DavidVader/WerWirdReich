@@ -20,7 +20,10 @@ namespace WerWirdReich
         private List<Questions> questions;
         private QuestionService questionService;
         private int round;
-
+        public GameController()
+        {
+            
+        }
         public GameController(object question, int round, int cash, object btnSender)
         {
             this.lableQuestion = (Label)question;

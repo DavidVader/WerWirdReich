@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using WMPLib;
 
 namespace WerWirdReich
 {
     public partial class FormOption : Form
     {
         private FormMenu menu;
+        private WMPLib.WindowsMediaPlayer wplayer;
 
         public FormOption()
         {
@@ -35,5 +37,17 @@ namespace WerWirdReich
             menu.Show();
             this.Hide();
         }
+
+        private void music_Click(object sender, EventArgs e)
+        {
+            if (wplayer == null)
+            {
+                wplayer = new WMPLib.WindowsMediaPlayer();
+                wplayer.URL = "WwMTheme.mp3";
+            }
+
+            wplayer.controls.play();
+        }
+
     }
 }

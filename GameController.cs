@@ -20,16 +20,7 @@ namespace WerWirdReich
         private List<Questions> questions;
         private QuestionService questionService;
         private int round;
-        public GameController()
-        {
-
-        }
-        public GameController(object btnSender)
-        {
-            this.btnSender = (Button)btnSender;
-
-            CheckAnswer();
-        }
+        public GameController() { }
 
         public void UpdateGameData(object question, object btnA, object btnB, object btnC, object btnD)
         {
@@ -51,23 +42,28 @@ namespace WerWirdReich
             round++;
         }
 
-        private void CheckAnswer()
+        public void CheckAnswer(object sender)
         {
-            int userAnswer = 0;
-            if (this.btnSender.Name == this.btnA.Name) userAnswer = 0;
-            if (this.btnSender.Name == this.btnA.Name) userAnswer = 1;
-            if (this.btnSender.Name == this.btnA.Name) userAnswer = 2;
-            if (this.btnSender.Name == this.btnA.Name) userAnswer = 3;
+            Button clickedButton = (Button)sender;
 
-            if (this.questions[this.round].RightAnswer != userAnswer)
+            int userAnswer = 0;
+            if (clickedButton == btnA) userAnswer = 0;
+            else if (clickedButton == btnB) userAnswer = 1;
+            else if (clickedButton == btnC) userAnswer = 2;
+            else if (clickedButton == btnD) userAnswer = 3;
+
+            if (questions[round - 1].RightAnswer != userAnswer)
             {
+                MessageBox.Show("Sie haben Verloren...");
                 GenerateQuestions();
+                round = 0;
             }
             else
             {
-                this.cash += 100 * this.round;
+                cash += 100 * round;
             }
         }
+
 
         private void GenerateQuestions()
         {

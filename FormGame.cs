@@ -16,6 +16,7 @@ namespace WerWirdReich
 {
     public partial class FormGame : Form
     {
+        private GameController gameController;
         GameController meinSpiel;
         private int round = 0;
 
@@ -23,6 +24,8 @@ namespace WerWirdReich
         {
             InitializeComponent();
             FormClosing += Game_FormClosing;
+            gameController = new GameController();
+            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
 
             //Erhalte / Setze ein: Daten von GameControl
         }
@@ -31,27 +34,24 @@ namespace WerWirdReich
         {
             if (sender.Equals(btnA))
             {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
+                meinSpiel = new GameController(sender);
             }
 
             if (sender.Equals(btnB))
             {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
+                meinSpiel = new GameController(sender);
             }
 
             if (sender.Equals(btnC))
             {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
+                meinSpiel = new GameController(sender);
             }
 
             if (sender.Equals(btnD))
             {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
+                meinSpiel = new GameController(sender);
             }
+            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
         }
 
         private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();

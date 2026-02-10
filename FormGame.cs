@@ -16,43 +16,23 @@ namespace WerWirdReich
 {
     public partial class FormGame : Form
     {
-        GameController meinSpiel;
+        private GameController gameController;
         private int round = 0;
 
         public FormGame()
         {
             InitializeComponent();
             FormClosing += Game_FormClosing;
-
-            //Erhalte / Setze ein: Daten von GameControl
+            gameController = new GameController();
+            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
         }
 
         private void btnClickController(object sender, EventArgs e)
         {
-            if (sender.Equals(btnA))
-            {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
-            }
-
-            if (sender.Equals(btnB))
-            {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
-            }
-
-            if (sender.Equals(btnC))
-            {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
-            }
-
-            if (sender.Equals(btnD))
-            {
-                meinSpiel = new GameController(labelQuestion, round, 1000000, sender);
-                round++;
-            }
+            gameController.CheckAnswer(sender);
+            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
         }
+
 
         private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }

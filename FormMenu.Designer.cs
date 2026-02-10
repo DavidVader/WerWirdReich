@@ -68,21 +68,29 @@
             // 
             // btnOption
             // 
-            btnOption.Location = new Point(244, 325);
+            btnOption.BackColor = Color.Transparent;
+            btnOption.BackgroundImage = (Image)resources.GetObject("btnOption.BackgroundImage");
+            btnOption.BackgroundImageLayout = ImageLayout.Stretch;
+            btnOption.Cursor = Cursors.Hand;
+            btnOption.FlatAppearance.BorderSize = 0;
+            btnOption.FlatStyle = FlatStyle.Flat;
+            btnOption.Location = new Point(244, 330);
             btnOption.Name = "btnOption";
             btnOption.Size = new Size(264, 95);
             btnOption.TabIndex = 2;
-            btnOption.Text = "Einstellungen";
-            btnOption.UseVisualStyleBackColor = true;
+            btnOption.UseVisualStyleBackColor = false;
             btnOption.Click += btnOption_Click;
             // 
             // btnQuit
             // 
+            btnQuit.BackgroundImage = (Image)resources.GetObject("btnQuit.BackgroundImage");
+            btnQuit.BackgroundImageLayout = ImageLayout.Stretch;
+            btnQuit.FlatAppearance.BorderSize = 0;
+            btnQuit.FlatStyle = FlatStyle.Flat;
             btnQuit.Location = new Point(244, 447);
             btnQuit.Name = "btnQuit";
             btnQuit.Size = new Size(264, 95);
             btnQuit.TabIndex = 3;
-            btnQuit.Text = "Beenden";
             btnQuit.UseVisualStyleBackColor = true;
             btnQuit.Click += btnQuit_Click;
             // 

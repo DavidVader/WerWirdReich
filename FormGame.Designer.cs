@@ -39,15 +39,14 @@
             btnD = new Button();
             btnJoker1 = new Button();
             btnJoker2 = new Button();
-            btnJoker3 = new Button();
+            btnZweitversuchJoker = new Button();
             SuspendLayout();
             // 
             // labelQuestion
             // 
-            labelQuestion.Location = new Point(180, 43);
-            labelQuestion.Margin = new Padding(4, 0, 4, 0);
+            labelQuestion.Location = new Point(144, 34);
             labelQuestion.Name = "labelQuestion";
-            labelQuestion.Size = new Size(608, 132);
+            labelQuestion.Size = new Size(486, 106);
             labelQuestion.TabIndex = 1;
             labelQuestion.Text = "Fragen";
             labelQuestion.TextAlign = ContentAlignment.MiddleCenter;
@@ -55,39 +54,35 @@
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Location = new Point(15, 11);
-            labelName.Margin = new Padding(4, 0, 4, 0);
+            labelName.Location = new Point(12, 9);
             labelName.Name = "labelName";
-            labelName.Size = new Size(59, 25);
+            labelName.Size = new Size(50, 20);
             labelName.TabIndex = 2;
             labelName.Text = "label1";
             // 
             // labelLevel
             // 
             labelLevel.AutoSize = true;
-            labelLevel.Location = new Point(196, 11);
-            labelLevel.Margin = new Padding(4, 0, 4, 0);
+            labelLevel.Location = new Point(157, 9);
             labelLevel.Name = "labelLevel";
-            labelLevel.Size = new Size(59, 25);
+            labelLevel.Size = new Size(50, 20);
             labelLevel.TabIndex = 3;
             labelLevel.Text = "label1";
             // 
             // labelCash
             // 
             labelCash.AutoSize = true;
-            labelCash.Location = new Point(635, 18);
-            labelCash.Margin = new Padding(4, 0, 4, 0);
+            labelCash.Location = new Point(508, 14);
             labelCash.Name = "labelCash";
-            labelCash.Size = new Size(59, 25);
+            labelCash.Size = new Size(50, 20);
             labelCash.TabIndex = 4;
             labelCash.Text = "label1";
             // 
             // btnOption
             // 
-            btnOption.Location = new Point(865, 11);
-            btnOption.Margin = new Padding(4, 4, 4, 4);
+            btnOption.Location = new Point(692, 9);
             btnOption.Name = "btnOption";
-            btnOption.Size = new Size(109, 42);
+            btnOption.Size = new Size(87, 34);
             btnOption.TabIndex = 5;
             btnOption.Text = "Einstellungen";
             btnOption.UseVisualStyleBackColor = true;
@@ -96,10 +91,9 @@
             // 
             btnA.BackColor = Color.FromArgb(192, 192, 255);
             btnA.FlatStyle = FlatStyle.Flat;
-            btnA.Location = new Point(180, 181);
-            btnA.Margin = new Padding(4, 4, 4, 4);
+            btnA.Location = new Point(144, 145);
             btnA.Name = "btnA";
-            btnA.Size = new Size(300, 100);
+            btnA.Size = new Size(240, 80);
             btnA.TabIndex = 6;
             btnA.Text = "A";
             btnA.UseVisualStyleBackColor = false;
@@ -109,10 +103,9 @@
             // 
             btnB.BackColor = Color.FromArgb(192, 192, 255);
             btnB.FlatStyle = FlatStyle.Flat;
-            btnB.Location = new Point(488, 181);
-            btnB.Margin = new Padding(4, 4, 4, 4);
+            btnB.Location = new Point(390, 145);
             btnB.Name = "btnB";
-            btnB.Size = new Size(300, 100);
+            btnB.Size = new Size(240, 80);
             btnB.TabIndex = 7;
             btnB.Text = "B";
             btnB.UseVisualStyleBackColor = false;
@@ -122,10 +115,9 @@
             // 
             btnC.BackColor = Color.FromArgb(192, 192, 255);
             btnC.FlatStyle = FlatStyle.Flat;
-            btnC.Location = new Point(180, 289);
-            btnC.Margin = new Padding(4, 4, 4, 4);
+            btnC.Location = new Point(144, 231);
             btnC.Name = "btnC";
-            btnC.Size = new Size(300, 100);
+            btnC.Size = new Size(240, 80);
             btnC.TabIndex = 8;
             btnC.Text = "C";
             btnC.UseVisualStyleBackColor = false;
@@ -135,10 +127,9 @@
             // 
             btnD.BackColor = Color.FromArgb(192, 192, 255);
             btnD.FlatStyle = FlatStyle.Flat;
-            btnD.Location = new Point(488, 289);
-            btnD.Margin = new Padding(4, 4, 4, 4);
+            btnD.Location = new Point(390, 231);
             btnD.Name = "btnD";
-            btnD.Size = new Size(300, 100);
+            btnD.Size = new Size(240, 80);
             btnD.TabIndex = 9;
             btnD.Text = "D";
             btnD.UseVisualStyleBackColor = false;
@@ -146,40 +137,40 @@
             // 
             // btnJoker1
             // 
-            btnJoker1.Location = new Point(15, 139);
-            btnJoker1.Margin = new Padding(4, 4, 4, 4);
+            btnJoker1.Location = new Point(12, 111);
             btnJoker1.Name = "btnJoker1";
-            btnJoker1.Size = new Size(118, 36);
+            btnJoker1.Size = new Size(94, 29);
             btnJoker1.TabIndex = 10;
             btnJoker1.Text = "button1";
             btnJoker1.UseVisualStyleBackColor = true;
+            btnJoker1.Click += btnJoker1_Click;
             // 
             // btnJoker2
             // 
-            btnJoker2.Location = new Point(15, 201);
-            btnJoker2.Margin = new Padding(4, 4, 4, 4);
+            btnJoker2.Location = new Point(12, 161);
             btnJoker2.Name = "btnJoker2";
-            btnJoker2.Size = new Size(118, 36);
+            btnJoker2.Size = new Size(94, 29);
             btnJoker2.TabIndex = 11;
             btnJoker2.Text = "button2";
             btnJoker2.UseVisualStyleBackColor = true;
+            btnJoker2.Click += btnJoker2_Click;
             // 
-            // btnJoker3
+            // btnZweitversuchJoker
             // 
-            btnJoker3.Location = new Point(15, 266);
-            btnJoker3.Margin = new Padding(4, 4, 4, 4);
-            btnJoker3.Name = "btnJoker3";
-            btnJoker3.Size = new Size(118, 36);
-            btnJoker3.TabIndex = 12;
-            btnJoker3.Text = "button3";
-            btnJoker3.UseVisualStyleBackColor = true;
+            btnZweitversuchJoker.Location = new Point(12, 213);
+            btnZweitversuchJoker.Name = "btnZweitversuchJoker";
+            btnZweitversuchJoker.Size = new Size(94, 29);
+            btnZweitversuchJoker.TabIndex = 12;
+            btnZweitversuchJoker.Text = "button3";
+            btnZweitversuchJoker.UseVisualStyleBackColor = true;
+            btnZweitversuchJoker.Click += btnZweitversuchJoker_Click;
             // 
             // FormGame
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
-            Controls.Add(btnJoker3);
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnZweitversuchJoker);
             Controls.Add(btnJoker2);
             Controls.Add(btnJoker1);
             Controls.Add(btnD);
@@ -191,7 +182,6 @@
             Controls.Add(labelLevel);
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "FormGame";
             Text = "WER WIRD REICH";
             ResumeLayout(false);
@@ -210,6 +200,6 @@
         private Button btnD;
         private Button btnJoker1;
         private Button btnJoker2;
-        private Button btnJoker3;
+        private Button btnZweitversuchJoker;
     }
 }

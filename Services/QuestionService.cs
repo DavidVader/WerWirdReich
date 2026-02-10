@@ -25,16 +25,25 @@ namespace WerWirdReich.Services
             Random rnd = new Random();
             List<Questions> result = new List<Questions>();
 
-            var grouped = allQuestions.GroupBy(q => q.Level);
+            var easy = allQuestions.Where(q => q.Level == 1).ToList();
+            var normal = allQuestions.Where(q => q.Level == 2).ToList();
+            var hard = allQuestions.Where(q => q.Level == 3).ToList();
 
-            foreach (var group in grouped)
-            {
-                var list = group.ToList();
-                result.Add(list[rnd.Next(list.Count)]);
-            }
+            AddRandom(result, easy, 5, rnd);
+            AddRandom(result, normal, 10, rnd);
+            AddRandom(result, hard, 5, rnd);
 
             return result;
         }
 
+        private void AddRandom(List<Questions> target, List<Questions> source, int count, Random rnd)
+        {
+            for (int i = 0; i < count && source.Count > 0; i++)
+            {
+                int index = rnd.Next(source.Count);
+                target.Add(source[index]);
+                source.RemoveAt(index);
+            }
+        }
     }
 }

@@ -24,13 +24,13 @@ namespace WerWirdReich
             InitializeComponent();
             FormClosing += Game_FormClosing;
             gameController = new GameController();
-            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, btnA, btnB, btnC, btnD);
         }
 
         private void btnClickController(object sender, EventArgs e)
         {
             gameController.CheckAnswer(sender);
-            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, btnA, btnB, btnC, btnD);
         }
 
 

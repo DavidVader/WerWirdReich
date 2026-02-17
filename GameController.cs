@@ -12,7 +12,7 @@ namespace WerWirdReich
 {
     class GameController
     {
-        private System.Windows.Forms.Label lableQuestion;
+        private System.Windows.Forms.Label lableQuestion, labelMoney;
         private Random random;
         private Player player;
         private int cash;
@@ -22,11 +22,12 @@ namespace WerWirdReich
         private int round;
         public GameController() { }
 
-        public void UpdateGameData(object question, object btnA, object btnB, object btnC, object btnD)
+        public void UpdateGameData(object question, object money, object btnA, object btnB, object btnC, object btnD)
         {
             if (this.questions == null) GenerateQuestions();
 
             this.lableQuestion = (Label)question;
+            this.labelMoney = (Label)money;
             this.btnA = (Button)btnA;
             this.btnB = (Button)btnB;
             this.btnC = (Button)btnC;
@@ -57,11 +58,13 @@ namespace WerWirdReich
                 MessageBox.Show("Sie haben Verloren...");
                 GenerateQuestions();
                 round = 0;
+                cash = 0;
             }
             else
             {
                 cash += 100 * round;
             }
+            this.labelMoney.Text = cash.ToString() + " MARK";
         }
 
 

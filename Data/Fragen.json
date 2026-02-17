@@ -1,212 +1,572 @@
 [
   {
     "level": 1,
-    "question": "Welcher Planet ist der Sonne am nächsten?",
-    "answers": [ "Venus", "Merkur", "Mars", "Erde" ],
+    "question": "Wie wurde Deutschland nach dem Zweiten Weltkrieg genannt?",
+    "answers": [ "Das Dritte Reich", "Die Weimarer Republik", "Das geteilte Land", "Das Kaiserreich" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Wie viele Minuten hat eine Stunde?",
-    "answers": [ "30", "45", "60", "90" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Welches Meer liegt südlich von Europa?",
-    "answers": [ "Nordsee", "Ostsee", "Mittelmeer", "Schwarzes Meer" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Welche Farbe hat Chlorophyll?",
-    "answers": [ "Rot", "Blau", "Gelb", "Grün" ],
-    "rightAnswer": 4
-  },
-  {
-    "level": 1,
-    "question": "Wie viele Bundesländer hat Deutschland?",
-    "answers": [ "14", "15", "16", "17" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Was ist die Hauptstadt von Österreich?",
-    "answers": [ "Graz", "Salzburg", "Wien", "Innsbruck" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Welches Organ pumpt Blut durch den Körper?",
-    "answers": [ "Lunge", "Leber", "Herz", "Niere" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Wie viele Kontinente gibt es?",
-    "answers": [ "5", "6", "7", "8" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Welche Einheit misst elektrische Spannung?",
-    "answers": [ "Ampere", "Volt", "Ohm", "Watt" ],
+    "question": "Welche Währung wurde 1948 in Westdeutschland eingeführt, die auch in den 50ern prägend war?",
+    "answers": [ "Reichsmark", "Goldmark", "Deutsche Mark", "Euro" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Welches Tier ist ein Wirbeltier?",
-    "answers": [ "Qualle", "Regenwurm", "Fisch", "Ameise" ],
-    "rightAnswer": 3
+    "question": "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
+    "answers": [ "Willy Brandt", "Konrad Adenauer", "Ludwig Erhard", "Kurt Georg Kiesinger" ],
+    "rightAnswer": 1
   },
   {
     "level": 1,
-    "question": "Was ist gefrorenes Kohlendioxid?",
-    "answers": [ "Eis", "Schnee", "Trockeneis", "Nebel" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Wie nennt man die Lehre vom Wetter?",
-    "answers": [ "Geologie", "Meteorologie", "Astronomie", "Biologie" ],
+    "question": "Wie hieß die Hauptstadt der DDR?",
+    "answers": [ "Bonn", "Weimar", "Ost-Berlin", "Potsdam" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Welche Sprache wird in Brasilien gesprochen?",
-    "answers": [ "Spanisch", "Englisch", "Portugiesisch", "Französisch" ],
-    "rightAnswer": 3
+    "question": "Was war ein bekanntes Wirtschaftswunder-Produkt der 50er Jahre?",
+    "answers": [ "Das Smartphone", "Der VW Käfer", "Der Personal Computer", "Die Dampflokomotive" ],
+    "rightAnswer": 1
   },
   {
     "level": 1,
-    "question": "Welches Metall ist flüssig bei Raumtemperatur?",
-    "answers": [ "Eisen", "Quecksilber", "Kupfer", "Aluminium" ],
+    "question": "Wie hieß die deutsche Teilung im Volksmund?",
+    "answers": [ "Eiserner Vorhang", "Berliner Mauer", "Zonenrandgebiet", "Innerdeutsche Grenze" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Welcher Politiker prägte den Begriff 'Wohlstand für alle'?",
+    "answers": [ "Konrad Adenauer", "Ludwig Erhard", "Theodor Heuss", "Kurt Schumacher" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "In welchem Jahr fand die erste Bundestagswahl statt?",
+    "answers": [ "1945", "1949", "1953", "1957" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Was war eine beliebte Freizeitbeschäftigung in den 50ern?",
+    "answers": [ "Computerspiele", "Internet surfen", "Moped fahren", "Skateboard fahren" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Wie viele Zähne hat ein Erwachsener normalerweise?",
-    "answers": [ "28", "30", "32", "34" ],
-    "rightAnswer": 3
+    "question": "Wie wurde die Ära der 50er Jahre in Westdeutschland oft genannt?",
+    "answers": [ "Die Goldenen Zwanziger", "Die Wirtschaftswunderjahre", "Die Nullerjahre", "Die bleierne Zeit" ],
+    "rightAnswer": 1
   },
   {
     "level": 1,
-    "question": "Welche Himmelsrichtung liegt zwischen Norden und Osten?",
-    "answers": [ "Nordwest", "Südost", "Nordost", "Südwest" ],
-    "rightAnswer": 3
-  },
-  {
-    "level": 1,
-    "question": "Was ist die größte Tierart der Erde?",
-    "answers": [ "Elefant", "Blauwal", "Hai", "Giraffe" ],
+    "question": "Welcher Sender begann 1952 mit dem regelmäßigen Fernsehprogramm in Westdeutschland?",
+    "answers": [ "ZDF", "RTL", "ARD", "SAT.1" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Welche Einheit misst Frequenz?",
-    "answers": [ "Newton", "Hertz", "Joule", "Kelvin" ],
+    "question": "Was war eine typische Musikrichtung der 50er?",
+    "answers": [ "Techno", "Rock 'n' Roll", "Hip Hop", "Punk" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Wie hieß der erste Bundespräsident der Bundesrepublik?",
+    "answers": [ "Theodor Heuss", "Heinrich Lübke", "Gustav Heinemann", "Walter Scheel" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 1,
+    "question": "Was war die 'Coca-Cola'-Flasche in den 50ern ein Symbol für?",
+    "answers": [ "Amerikanisierung", "Kommunismus", "Verzicht", "Hunger" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 1,
+    "question": "In welchem Jahr starben etwa 20.000 Menschen bei der Sturmflut in Norddeutschland?",
+    "answers": [ "1953", "1957", "1962", "1950" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Welches Blutgefäß führt Blut zum Herzen?",
-    "answers": [ "Arterie", "Vene", "Kapillare", "Aorta" ],
+    "question": "Welche Stadt war die provisorische Hauptstadt der Bundesrepublik?",
+    "answers": [ "Frankfurt", "Hamburg", "Bonn", "Berlin" ],
     "rightAnswer": 2
   },
   {
     "level": 1,
-    "question": "Welche Zahl ist eine Primzahl?",
-    "answers": [ "9", "15", "17", "21" ],
+    "question": "Was war ein 'Nierentisch'?",
+    "answers": [ "Ein Möbelstück", "Ein Medikament", "Eine Tischdecke", "Eine Tanzeinlage" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 1,
+    "question": "Welches Land war nicht Besatzungsmacht in Deutschland?",
+    "answers": [ "USA", "Sowjetunion", "Frankreich", "Italien" ],
     "rightAnswer": 3
   },
   {
-    "level": 2,
-    "question": "In welchem Jahr begann der Zweite Weltkrieg?",
-    "answers": [ "1937", "1938", "1939", "1941" ],
-    "rightAnswer": 3
+    "level": 1,
+    "question": "Welcher deutsche Schauspieler wurde in den 50ern zum Star (z.B. 'Sissi')?",
+    "answers": [ "Curd Jürgens", "O.W. Fischer", "Karlheinz Böhm", "Heinz Rühmann" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 1,
+    "question": "Was verstand man unter 'Fresswelle'?",
+    "answers": [ "Eine Protestaktion", "Die gesteigerte Nahrungsmittel-Nachfrage", "Eine neue Diät", "Ein Fischgericht" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Wer war in den 50ern ein berühmter deutscher Boxer?",
+    "answers": [ "Henry Maske", "Max Schmeling", "Vitali Klitschko", "Felix Sturm" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Wie nannte man die Kinder dieser Generation oft?",
+    "answers": [ "Kriegskinder", "Babyboomer", "Generation X", "Millennials" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Welcher Partei gehörte Konrad Adenauer an?",
+    "answers": [ "SPD", "FDP", "CDU", "Grüne" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 1,
+    "question": "Welcher Aufstand ereignete sich am 17. Juni 1953?",
+    "answers": [ "Studentenunruhen", "Volksaufstand in der DDR", "Hungerstreik im Ruhrgebiet", "Bauernproteste in Bayern" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Was war das 'Wirtschaftswunder'?",
+    "answers": [ "Ein Zirkus", "Der schnelle Wiederaufbau", "Eine Zauberformel", "Ein neues Auto" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Was war in den 50ern oft das erste Familienauto?",
+    "answers": [ "BMW Isetta", "Porsche 356", "Mercedes 300 SL", "Opel Kapitän" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 1,
+    "question": "Welches Nachrichtenmagazin wurde 1946/47 gegründet und war in den 50ern wichtig?",
+    "answers": [ "Focus", "Stern", "Der Spiegel", "Bunte" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 1,
+    "question": "Wie hieß die beliebte Rundfunk- und Fernsehshow '......'?",
+    "answers": [ "Wetten, dass..?", "Der goldene Schuss", "Dalli Dalli", "Musik ist Trumpf" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Was war ein typisches Kleidungsstück der 50er Jahre für Männer?",
+    "answers": [ "Jeans und T-Shirt", "Nadelstreifenanzug", "Lederhose", "Hippie-Gewand" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 1,
+    "question": "Welche Stadt war durch die Luftbrücke 1948/49 ein Symbol der Freiheit?",
+    "answers": [ "Berlin", "Hamburg", "Frankfurt", "München" ],
+    "rightAnswer": 0
   },
   {
     "level": 2,
-    "question": "Welches Element hat das chemische Symbol Fe?",
-    "answers": [ "Blei", "Silber", "Eisen", "Zinn" ],
-    "rightAnswer": 3
+    "question": "Welches Abkommen von 1955 beendete formell den Kriegszustand zwischen der Sowjetunion und Deutschland?",
+    "answers": [ "Pariser Verträge", "Deutschlandvertrag", "Moskauer Vertrag", "Warschauer Abkommen" ],
+    "rightAnswer": 0
   },
   {
     "level": 2,
-    "question": "Wie viele Knochen hat der menschliche Körper?",
-    "answers": [ "198", "206", "212", "220" ],
+    "question": "Wie hieß das deutsche 'Wirtschaftswunder'-Kind, das 1955 auf den Markt kam?",
+    "answers": [ "VW Bus", "Goggomobil", "BMW 600", "Fiat 500" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "In welchem Jahr trat die Bundesrepublik der NATO bei?",
+    "answers": [ "1954", "1955", "1956", "1957" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Was war die 'Hallstein-Doktrin'?",
+    "answers": [ "Eine Wirtschaftsreform", "Ein Alleinvertretungsanspruch", "Ein Friedensplan", "Eine Steuerreform" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welcher berühmte deutsche Schriftsteller veröffentlichte 1959 'Die Blechtrommel'?",
+    "answers": [ "Heinrich Böll", "Günter Grass", "Siegfried Lenz", "Martin Walser" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welche Organisation wurde 1956 in der DDR zur 'Wehrertüchtigung' gegründet?",
+    "answers": [ "Bundeswehr", "Nationale Volksarmee (NVA)", "Kasernierte Volkspolizei", "Freie Deutsche Jugend (FDJ)" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welches berühmte Musikfestival fand erstmals 1959 auf der Insel Mainau statt?",
+    "answers": [ "Rock am Ring", "Jazz-Festival", "Schlagermove", "Deutsches Schlager-Festival" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Was bedeutete der Begriff 'Adenauer-Ära'?",
+    "answers": [ "Die Zeit des Kalten Krieges", "Die Regierungszeit Konrad Adenauers", "Die Wirtschaftskrise", "Die Wiedervereinigung" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welcher deutsche Filmemacher drehte in den 50ern Heimatfilme wie 'Grün ist die Heide'?",
+    "answers": [ "Rainer Werner Fassbinder", "Hans Deppe", "Werner Herzog", "Wolfgang Petersen" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welches Ereignis 1952 schnitt die Verbindungen zwischen den Zonen ab?",
+    "answers": [ "Mauerbau", "Sperrung der Zonengrenze", "Berlin-Blockade", "Luftbrücke" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welcher Politiker war von 1953-1971 Außenminister der Bundesrepublik?",
+    "answers": [ "Gerhard Schröder (CDU)", "Heinrich von Brentano", "Willy Brandt", "Hans-Dietrich Genscher" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 2,
+    "question": "Was war der 'Volksaufstand vom 17. Juni 1953' ursprünglich?",
+    "answers": [ "Ein Studentenprotest", "Ein Arbeiteraufstand", "Ein Bauernprotest", "Eine kirchliche Bewegung" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welches berühmte Modeaccessoire der 50er Jahre ist nach einer Tänzerin benannt?",
+    "answers": [ "Petticoat", "Korsett", "Caprihose", "Bikini" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 2,
+    "question": "Welcher deutsche Fußballverein gewann 1955 die erste deutsche Meisterschaft nach dem Krieg?",
+    "answers": [ "1. FC Kaiserslautern", "Borussia Dortmund", "Rot-Weiss Essen", "Hamburger SV" ],
     "rightAnswer": 2
   },
   {
     "level": 2,
-    "question": "Welche Stadt wird als \"Ewige Stadt\" bezeichnet?",
-    "answers": [ "Athen", "Jerusalem", "Rom", "Istanbul" ],
-    "rightAnswer": 3
+    "question": "In welchem Jahr wurde die Montanunion gegründet, ein Vorläufer der EU?",
+    "answers": [ "1951", "1952", "1955", "1957" ],
+    "rightAnswer": 0
   },
   {
     "level": 2,
-    "question": "Was bedeutet das lateinische Wort \"Veto\"?",
-    "answers": [ "Ich stimme zu", "Ich verbiete", "Ich warne", "Ich fordere" ],
+    "question": "Was war das Ziel der 'Röhrenden Hirsche'?",
+    "answers": [ "Eine Jagdgesellschaft", "Eine Künstlergruppe", "Jugendliche Rocker", "Eine Naturschutzbewegung" ],
     "rightAnswer": 2
   },
   {
     "level": 2,
-    "question": "Welcher Fluss fließt durch Paris?",
-    "answers": [ "Themse", "Rhein", "Seine", "Loire" ],
-    "rightAnswer": 3
+    "question": "Welcher Radiosender war berühmt für seine Beat-Musik, die Jugendliche in Ost und West hörten?",
+    "answers": [ "Deutschlandfunk", "RIAS", "BBC", "Radio Luxemburg" ],
+    "rightAnswer": 1
   },
   {
     "level": 2,
-    "question": "Welche Schicht der Erde ist flüssig?",
-    "answers": [ "Erdkruste", "Erdmantel", "Äußerer Kern", "Innerer Kern" ],
-    "rightAnswer": 3
+    "question": "Wie viele Bundesländer hatte die Bundesrepublik bei ihrer Gründung 1949 (inklusive West-Berlin)?",
+    "answers": [ "10", "11", "12", "13" ],
+    "rightAnswer": 1
   },
   {
     "level": 2,
-    "question": "Was ist der pH-Wert von reinem Wasser?",
-    "answers": [ "5", "6", "7", "8" ],
-    "rightAnswer": 3
+    "question": "Was war die 'Grüne Minna'?",
+    "answers": [ "Ein Einkaufswagen", "Ein Gefangenentransporter", "Eine Modemarke", "Ein Kleidungsstück" ],
+    "rightAnswer": 1
   },
   {
     "level": 2,
-    "question": "Wer formulierte die Relativitätstheorie?",
-    "answers": [ "Newton", "Galilei", "Einstein", "Tesla" ],
-    "rightAnswer": 3
+    "question": "Welches bedeutende Römische Verträge wurden 1957 unterzeichnet?",
+    "answers": [ "Vertrag von Rom", "Gründung der EWG", "NATO-Vertrag", "Deutschlandvertrag" ],
+    "rightAnswer": 1
   },
   {
     "level": 2,
-    "question": "Welche Einheit misst Leistung?",
-    "answers": [ "Joule", "Watt", "Newton", "Volt" ],
+    "question": "Welcher Schauspieler wurde durch die Rolle des 'Winnetou' in den 50ern (und 60ern) berühmt?",
+    "answers": [ "Lex Barker", "Pierre Brice", "Stewart Granger", "Götz George" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Was verstand man unter 'Kinderlandverschickung' in den 50ern?",
+    "answers": [ "Ferienlager", "Zwangsarbeit", "Schulausflug", "Flucht aus der DDR" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 2,
+    "question": "Welche Automarke brachte 1955 den '300 SL Flügeltürer' heraus?",
+    "answers": [ "Porsche", "Mercedes-Benz", "BMW", "Audi" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Wie hieß das erste deutsche Fernsehprogramm, das 1952 startete?",
+    "answers": [ "NWDR-Fernsehen", "Deutsches Fernsehen", "ARD", "ZDF" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 2,
+    "question": "In welchem Jahr endete die Besatzungszeit offiziell in Westdeutschland?",
+    "answers": [ "1952", "1955", "1957", "1960" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welcher Begriff beschreibt die politische Haltung vieler Deutscher in den 50ern?",
+    "answers": [ "68er-Bewegung", "Restauration", "Revolution", "Liberalisierung" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welcher Tanz wurde in den 50er Jahren populär?",
+    "answers": [ "Lambada", "Rock 'n' Roll", "Discofox", "Breakdance" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welches Land war kein Gründungsmitglied der EWG 1957?",
+    "answers": [ "Frankreich", "Italien", "Großbritannien", "Deutschland" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 2,
+    "question": "Wie hieß der erste deutsche Nachkriegsstar der 'Schlager'?",
+    "answers": [ "Freddy Quinn", "Peter Alexander", "Udo Jürgens", "Roy Black" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 2,
+    "question": "Welcher deutsche Maler wurde durch seine 'Informel'-Kunst in den 50ern bekannt?",
+    "answers": [ "Joseph Beuys", "Gerhard Richter", "Karl Otto Götz", "Georg Baselitz" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 2,
+    "question": "Welcher Staat war der wichtigste Handelspartner der Bundesrepublik in den 50ern?",
+    "answers": [ "USA", "Frankreich", "Großbritannien", "Italien" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 2,
+    "question": "Welches Flugzeug war das Rückgrat der wiederaufgebauten Lufthansa?",
+    "answers": [ "Junkers Ju 52", "Messerschmitt Me 262", "Lockheed Super Constellation", "Boeing 707" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 2,
+    "question": "Was war die 'Stalinallee' in Ost-Berlin ein Symbol für?",
+    "answers": [ "Sozialistischen Städtebau", "Westliche Dekadenz", "Militärische Stärke", "Wirtschaftliche Krise" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 2,
+    "question": "Welche Partei verlor 1957 ihre absolute Mehrheit im Bundestag?",
+    "answers": [ "SPD", "FDP", "CDU/CSU", "DP" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 2,
+    "question": "Was bedeutete die Abkürzung 'GmbH' in den 50ern?",
+    "answers": [ "Gesellschaft mit beschränkter Haftung", "Gemeinnützige GmbH", "Grundstücksmarkt", "Gesetzliche Mitbestimmung" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Welcher Ökonom gilt als der 'Vater des Wirtschaftswunders' neben Ludwig Erhard?",
+    "answers": [ "Alfred Müller-Armack", "Walter Eucken", "Franz Böhm", "Wilhelm Röpke" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "In welchem Jahr wurde die Bundeswehr offiziell gegründet?",
+    "answers": [ "1955", "1956", "1957", "1958" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Was war das 'Go-In' im politischen Kontext der 50er?",
+    "answers": [ "Eine studentische Bewegung", "Die Taktik der SPD, in die Regierung zu gehen", "Ein Wirtschaftsbegriff", "Eine Spionageaffäre" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "Welcher deutsche Physiker und Friedensforscher warnte in den 50ern vor der Atombombe?",
+    "answers": [ "Werner Heisenberg", "Otto Hahn", "Carl Friedrich von Weizsäcker", "Max Born" ],
     "rightAnswer": 2
   },
   {
     "level": 3,
-    "question": "In welchem Jahr fiel die Berliner Mauer?",
-    "answers": [ "1987", "1988", "1989", "1990" ],
+    "question": "Welche Affäre um einen SPIEGEL-Journalisten erschütterte 1954 die Bundesrepublik?",
+    "answers": [ "Spiegel-Affäre", "Naumann-Affäre", "Flick-Affäre", "Guillaume-Affäre" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "Wie viele Deutsche flohen zwischen 1949 und 1961 aus der DDR?",
+    "answers": [ "Ca. 500.000", "Ca. 1,5 Millionen", "Ca. 2,7 Millionen", "Ca. 4 Millionen" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 3,
+    "question": "Welche Organisation war das Sprachrohr der 'Halbstarken'?",
+    "answers": [ "Die Kirchen", "Die Gewerkschaften", "Die Boulevardpresse", "Die Universitäten" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 3,
+    "question": "Welcher französische Außenminister schlug 1950 die Montanunion vor?",
+    "answers": [ "Charles de Gaulle", "Robert Schuman", "Jean Monnet", "Georges Bidault" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "Welcher Vertrag regelte 1952 die Beziehungen zwischen der Bundesrepublik und den Westmächten?",
+    "answers": [ "Pariser Verträge", "Deutschlandvertrag", "Generalvertrag", "EVG-Vertrag" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 3,
+    "question": "Was war die 'Kampfgruppe gegen Unmenschlichkeit'?",
+    "answers": [ "Eine westdeutsche Spionageorganisation", "Eine Menschenrechtsgruppe in der DDR", "Eine militärische Einheit", "Eine kirchliche Friedensbewegung" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Welcher Schriftsteller veröffentlichte 1959 'Ansichten eines Clowns'?",
+    "answers": [ "Heinrich Böll", "Günter Grass", "Siegfried Lenz", "Uwe Johnson" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Welcher Automobilhersteller brachte 1957 die 'BMW 600' als Kleinwagen?",
+    "answers": [ "BMW", "Mercedes-Benz", "NSU", "Auto Union" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Wie hieß der erste deutsche Fernsehkrimi, der 1955 ausgestrahlt wurde?",
+    "answers": [ "Tatort", "Stahlnetz", "Der Kommissar", "Polizeiruf 110" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "Welches Ereignis 1956 zeigte die Grenzen des Wirtschaftswunders auf?",
+    "answers": [ "Die Kohlekrise", "Die Ölkrise", "Die Stahlkrise", "Die Textilkrise" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Wer war von 1950-1958 der erste Präsident des Bundesverfassungsgerichts?",
+    "answers": [ "Hermann Höpker-Aschoff", "Josef Wintrich", "Gebhard Müller", "Ernst Benda" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Welche Zeitschrift war das führende Nachrichtenmagazin der jungen Bundesrepublik?",
+    "answers": [ "Der Spiegel", "Stern", "Quick", "Revue" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Was bedeutete 'Ostpolitik' in den 50er Jahren?",
+    "answers": [ "Die Politik der Entspannung mit dem Osten", "Die Hallstein-Doktrin", "Willy Brandts spätere Politik", "Handelsbeziehungen mit der Sowjetunion" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "Welches Musikstück von 1956 gilt als einer der ersten deutschen Rock'n'Roll-Hits?",
+    "answers": [ "Rock Around the Clock", "Tutti Frutti", "Hula-Baby", "Am 30. Mai ist der Weltuntergang" ],
     "rightAnswer": 3
   },
   {
     "level": 3,
-    "question": "Wie lautet die chemische Formel von Schwefelsäure?",
-    "answers": [ "HCl", "H2SO4", "HNO3", "NaOH" ],
-    "rightAnswer": 2
-  },
-  {
-    "level": 3,
-    "question": "Welcher Planet hat die kürzeste Umlaufzeit um die Sonne?",
-    "answers": [ "Venus", "Mars", "Merkur", "Erde" ],
+    "question": "Wer war der letzte Ministerpräsident der DDR vor ihrer Gründung 1949?",
+    "answers": [ "Otto Grotewohl", "Wilhelm Pieck", "Walter Ulbricht", "Max Seydewitz" ],
     "rightAnswer": 3
   },
   {
     "level": 3,
-    "question": "Was beschreibt die Heisenbergsche Unschärferelation?",
-    "answers": [ "Energieerhaltung", "Ort und Impuls", "Zeitdilatation", "Masse-Energie-Äquivalenz" ],
+    "question": "Welche 1950 gegründete Organisation war für die psychologische Kriegsführung der USA in Deutschland zuständig?",
+    "answers": [ "CIA", "RIAS", "HICOG", "OSS" ],
     "rightAnswer": 2
   },
   {
     "level": 3,
-    "question": "Wer schrieb \"Also sprach Zarathustra\"?",
-    "answers": [ "Kant", "Nietzsche", "Schopenhauer", "Hegel" ],
+    "question": "Welches Bauwerk in Ost-Berlin war 1958 Anlass für das 'Ulbricht-Ultimatum'?",
+    "answers": [ "Brandenburger Tor", "Stalinallee", "Reichstagsgebäude", "Schloss Bellevue" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Welcher Künstler der 'Gruppe 47' war in den 50ern besonders einflussreich?",
+    "answers": [ "Heinrich Böll", "Günter Grass", "Ingeborg Bachmann", "Alle drei" ],
+    "rightAnswer": 3
+  },
+  {
+    "level": 3,
+    "question": "Wie hoch war die Arbeitslosenquote in Westdeutschland 1950 etwa?",
+    "answers": [ "5%", "8%", "11%", "15%" ],
     "rightAnswer": 2
+  },
+  {
+    "level": 3,
+    "question": "Welches Chemieunternehmen wurde 1952 als Nachfolger der I.G. Farben gegründet?",
+    "answers": [ "BASF", "Bayer", "Hoechst", "Alle drei" ],
+    "rightAnswer": 3
+  },
+  {
+    "level": 3,
+    "question": "Welcher deutsche Fußballer wurde 1954 zum 'Fußballer des Jahres' gewählt?",
+    "answers": [ "Fritz Walter", "Toni Turek", "Helmut Rahn", "Max Morlock" ],
+    "rightAnswer": 0
+  },
+  {
+    "level": 3,
+    "question": "Was war das Ziel der 'Bundeszentrale für Heimatdienst' (später bpb)?",
+    "answers": [ "Spionageabwehr", "Politische Bildung", "Wirtschaftsförderung", "Kulturelle Repräsentation" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "In welchem Jahr wurde das ZDF gegründet?",
+    "answers": [ "1957", "1961", "1963", "1959" ],
+    "rightAnswer": 1
+  },
+  {
+    "level": 3,
+    "question": "Welche Affäre um einen hohen Beamten im Bundeskanzleramt gab es 1956?",
+    "answers": [ "Globke-Affäre", "Oberländer-Affäre", "John-Affäre", "Blank-Affäre" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 3,
+    "question": "Was war die 'Operation Vermin' der Stasi in den 50ern?",
+    "answers": [ "Spionage gegen den Westen", "Einschleusung von Agenten", "Sabotageakte", "Desinformation" ],
+    "rightAnswer": 2
+  },
+  {
+    "level": 3,
+    "question": "Welcher deutsche Architekt prägte den Wiederaufbau im Stil der 50er (z.B. Hansaviertel)?",
+    "answers": [ "Walter Gropius", "Hans Scharoun", "Ludwig Mies van der Rohe", "Egon Eiermann" ],
+    "rightAnswer": 1
   }
 ]

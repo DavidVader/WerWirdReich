@@ -40,13 +40,13 @@
             btnD = new Button();
             btnJoker1 = new Button();
             btnJoker2 = new Button();
-            btnJoker3 = new Button();
+            btnZweitversuchJoker = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
             // labelQuestion
             // 
-            labelQuestion.Location = new Point(180, 43);
+            labelQuestion.Location = new Point(180, 42);
             labelQuestion.Margin = new Padding(4, 0, 4, 0);
             labelQuestion.Name = "labelQuestion";
             labelQuestion.Size = new Size(608, 132);
@@ -67,8 +67,8 @@
             // labelLevel
             // 
             labelLevel.AutoSize = true;
-            labelLevel.Location = new Point(469, 9);
-            labelLevel.Margin = new Padding(4, 0, 4, 0);
+            labelLevel.Location = new Point(586, 11);
+            labelLevel.Margin = new Padding(5, 0, 5, 0);
             labelLevel.Name = "labelLevel";
             labelLevel.Size = new Size(22, 25);
             labelLevel.TabIndex = 3;
@@ -80,8 +80,8 @@
             labelCash.AutoSize = true;
             labelCash.BackColor = Color.White;
             labelCash.ImageAlign = ContentAlignment.MiddleRight;
-            labelCash.Location = new Point(712, 11);
-            labelCash.Margin = new Padding(4, 0, 4, 0);
+            labelCash.Location = new Point(890, 14);
+            labelCash.Margin = new Padding(5, 0, 5, 0);
             labelCash.Name = "labelCash";
             labelCash.RightToLeft = RightToLeft.No;
             labelCash.Size = new Size(76, 25);
@@ -91,8 +91,8 @@
             // 
             // btnOption
             // 
-            btnOption.Location = new Point(865, 11);
-            btnOption.Margin = new Padding(4);
+            btnOption.Location = new Point(1081, 14);
+            btnOption.Margin = new Padding(5, 5, 5, 5);
             btnOption.Name = "btnOption";
             btnOption.Size = new Size(109, 42);
             btnOption.TabIndex = 5;
@@ -103,8 +103,8 @@
             // 
             btnA.BackColor = Color.FromArgb(192, 192, 255);
             btnA.FlatStyle = FlatStyle.Flat;
-            btnA.Location = new Point(180, 181);
-            btnA.Margin = new Padding(4);
+            btnA.Location = new Point(225, 226);
+            btnA.Margin = new Padding(5, 5, 5, 5);
             btnA.Name = "btnA";
             btnA.Size = new Size(300, 100);
             btnA.TabIndex = 6;
@@ -116,8 +116,8 @@
             // 
             btnB.BackColor = Color.FromArgb(192, 192, 255);
             btnB.FlatStyle = FlatStyle.Flat;
-            btnB.Location = new Point(488, 181);
-            btnB.Margin = new Padding(4);
+            btnB.Location = new Point(610, 226);
+            btnB.Margin = new Padding(5, 5, 5, 5);
             btnB.Name = "btnB";
             btnB.Size = new Size(300, 100);
             btnB.TabIndex = 7;
@@ -129,8 +129,8 @@
             // 
             btnC.BackColor = Color.FromArgb(192, 192, 255);
             btnC.FlatStyle = FlatStyle.Flat;
-            btnC.Location = new Point(180, 289);
-            btnC.Margin = new Padding(4);
+            btnC.Location = new Point(225, 361);
+            btnC.Margin = new Padding(5, 5, 5, 5);
             btnC.Name = "btnC";
             btnC.Size = new Size(300, 100);
             btnC.TabIndex = 8;
@@ -142,8 +142,8 @@
             // 
             btnD.BackColor = Color.FromArgb(192, 192, 255);
             btnD.FlatStyle = FlatStyle.Flat;
-            btnD.Location = new Point(488, 289);
-            btnD.Margin = new Padding(4);
+            btnD.Location = new Point(610, 361);
+            btnD.Margin = new Padding(5, 5, 5, 5);
             btnD.Name = "btnD";
             btnD.Size = new Size(300, 100);
             btnD.TabIndex = 9;
@@ -153,38 +153,42 @@
             // 
             // btnJoker1
             // 
-            btnJoker1.Location = new Point(15, 139);
-            btnJoker1.Margin = new Padding(4);
+            btnJoker1.Location = new Point(19, 174);
+            btnJoker1.Margin = new Padding(5, 5, 5, 5);
             btnJoker1.Name = "btnJoker1";
             btnJoker1.Size = new Size(118, 36);
             btnJoker1.TabIndex = 10;
             btnJoker1.Text = "button1";
             btnJoker1.UseVisualStyleBackColor = true;
+            btnJoker1.Click += btnJoker1_Click;
             // 
             // btnJoker2
             // 
-            btnJoker2.Location = new Point(15, 201);
-            btnJoker2.Margin = new Padding(4);
+            btnJoker2.Location = new Point(19, 226);
+            btnJoker2.Margin = new Padding(5, 5, 5, 5);
             btnJoker2.Name = "btnJoker2";
             btnJoker2.Size = new Size(118, 36);
             btnJoker2.TabIndex = 11;
             btnJoker2.Text = "button2";
             btnJoker2.UseVisualStyleBackColor = true;
+            btnJoker2.Click += btnJoker2_Click;
             // 
-            // btnJoker3
+            // btnZweitversuchJoker
             // 
-            btnJoker3.Location = new Point(15, 266);
-            btnJoker3.Margin = new Padding(4);
-            btnJoker3.Name = "btnJoker3";
-            btnJoker3.Size = new Size(118, 36);
-            btnJoker3.TabIndex = 12;
-            btnJoker3.Text = "button3";
-            btnJoker3.UseVisualStyleBackColor = true;
+            btnZweitversuchJoker.Location = new Point(19, 296);
+            btnZweitversuchJoker.Margin = new Padding(4, 4, 4, 4);
+            btnZweitversuchJoker.Name = "btnZweitversuchJoker";
+            btnZweitversuchJoker.Size = new Size(118, 36);
+            btnZweitversuchJoker.TabIndex = 12;
+            btnZweitversuchJoker.Text = "button3";
+            btnZweitversuchJoker.UseVisualStyleBackColor = true;
+            btnZweitversuchJoker.Click += btnZweitversuchJoker_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(904, 470);
+            label1.Location = new Point(1130, 588);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(92, 25);
             label1.TabIndex = 13;
@@ -196,9 +200,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(1250, 702);
             Controls.Add(label1);
-            Controls.Add(btnJoker3);
+            Controls.Add(btnZweitversuchJoker);
             Controls.Add(btnJoker2);
             Controls.Add(btnJoker1);
             Controls.Add(btnD);
@@ -210,7 +214,7 @@
             Controls.Add(labelLevel);
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
-            Margin = new Padding(4);
+            Margin = new Padding(5, 5, 5, 5);
             Name = "FormGame";
             Text = "WER WIRD REICH";
             ResumeLayout(false);
@@ -229,7 +233,7 @@
         private Button btnD;
         private Button btnJoker1;
         private Button btnJoker2;
-        private Button btnJoker3;
+        private Button btnZweitversuchJoker;
         private Label label1;
     }
 }

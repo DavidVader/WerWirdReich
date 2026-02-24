@@ -10,7 +10,7 @@ namespace WerWirdReich.Services
 {
     class PlayerService
     {
-        private static readonly string SaveFilePath = @"C:\YourGame\playerData.json";
+        private static readonly string SaveFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "player.json");
 
         public static List<Player> GetAllPlayers()
         {
@@ -55,18 +55,18 @@ namespace WerWirdReich.Services
                 return false;
             }
         }
-        public static bool CreatePlayer(string name, int highScore = 0, int playthrough = 0, int money = 0)
-        {
-            var player = new Player
-            {
-                Name = name,
-                HighScore = highScore,
-                AmountOfPlaythrough = playthrough,
-                TotalMoney = money
-            };
+        //public static bool CreatePlayer(string name, int highScore = 0, int playthrough = 0, int money = 0)
+        //{
+        //    var player = new Player
+        //    {
+        //        Name = name,
+        //        HighScore = highScore,
+        //        AmountOfPlaythrough = playthrough,
+        //        TotalMoney = money
+        //    };
 
-            return CreatePlayer(player);
-        }
+        //    return CreatePlayer(player);
+        //}
         public static bool EditPlayer(string playerName, Player updatedPlayer)
         {
             try

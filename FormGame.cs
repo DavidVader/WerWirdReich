@@ -54,7 +54,7 @@ namespace WerWirdReich
 
             NeueFrage(); // ← HIER hinzufügen!
 
-            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, btnA, btnB, btnC, btnD);
         }
 
 
@@ -68,8 +68,8 @@ namespace WerWirdReich
                 return;
 
             // Stelle sicher, dass die richtige Antwort gesetzt ist
-            if (string.IsNullOrEmpty(richtigeAntwortText))
-                richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
+            int richtigeIndex = gameController.CurrentQuestion.RightAnswer;
+            richtigeAntwortText = antwortButtons[richtigeIndex].Text;
 
             // Zwei falsche Antworten auswählen
             var falscheAntworten = antwortButtons
@@ -106,21 +106,46 @@ namespace WerWirdReich
             richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
         }
     
-
+        public void checkJokerBox(bool dome)
+        {
+            if (!dome)
+            {
+                btnJoker1.Visible = false;
+                btnJoker2.Visible = false;
+                btnZweitversuchJoker.Visible = false;
+            }
+            else
+            {
+                btnJoker1.Visible = true;
+                btnJoker2.Visible = true;
+                btnZweitversuchJoker.Visible = true;
+            }
+        }
 
 
         private void btnJoker2_Click(object sender, EventArgs e)
         {
-            var falscheAntworten = antwortButtons
-        .Where(b => b != richtigeAntwort)
-        .ToList();
+            // Richtigen Index holen
+            int richtigeIndex = gameController.CurrentCorrectIndex;
 
-            // eine falsche zufällig auswählen
+            // Liste aller falschen Antworten erstellen
+            var falscheAntworten = antwortButtons
+                .Where((button, index) => index != richtigeIndex && button.Visible)
+                .ToList();
+
+            // Sicherheitscheck (falls schon alles ausgeblendet wurde)
+            if (falscheAntworten.Count == 0)
+                return;
+
+            // Eine falsche zufällig auswählen
             Button auszublenden = falscheAntworten[rnd.Next(falscheAntworten.Count)];
 
-            // ausblenden oder deaktivieren
+            // Ausblenden
             auszublenden.Enabled = false;
             auszublenden.Visible = false;
+
+            // Joker deaktivieren (nur 1x nutzbar)
+            btnJoker2.Enabled = false;
         }
 
         private void btnZweitversuchJoker_Click(object sender, EventArgs e)

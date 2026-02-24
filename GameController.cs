@@ -67,6 +67,19 @@ namespace WerWirdReich
             this.labelMoney.Text = cash.ToString() + " MARK";
         }
 
+        public Questions CurrentQuestion
+        {
+            get { return questions[round - 1]; }
+        }
+
+        public int CurrentCorrectIndex
+        {
+            get
+            {
+                return questions[round - 1].RightAnswer;
+            }
+        }
+
 
         private void GenerateQuestions()
         {

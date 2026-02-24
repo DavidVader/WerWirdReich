@@ -18,12 +18,10 @@ namespace WerWirdReich
     {
         private FormGame game;
         private FormMenu menu;
-        private PlayerService playerService;
         public FormCreateGame()
         {
             InitializeComponent();
             FormClosing += CreateGame_FormClosing;
-            this.playerService = new PlayerService();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -36,7 +34,12 @@ namespace WerWirdReich
                 TotalMoney = 0
             };
 
-            //playerService.CreatePlayer(player);
+
+            
+                FormCreateGame.checkJokerBox(checkBoxJoker.Checked);
+            
+
+            PlayerService.CreatePlayer(player);
             game = new FormGame();
             game.Show();
             this.Hide();
@@ -48,6 +51,8 @@ namespace WerWirdReich
             menu.Show();
             this.Hide();
         }
+
+        
 
         private void CreateGame_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
 

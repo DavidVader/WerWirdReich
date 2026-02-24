@@ -17,7 +17,7 @@ namespace WerWirdReich
         private Player player;
         private int cash;
         private System.Windows.Forms.Button btnSender, btnA, btnB, btnC, btnD;
-        private List<Questions> questions;
+        public List<Questions> questions;
         private QuestionService questionService;
         private int round;
         public GameController() { }

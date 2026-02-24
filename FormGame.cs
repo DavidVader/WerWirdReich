@@ -25,6 +25,8 @@ namespace WerWirdReich
         private List<Button> antwortButtons;
         private Random rnd = new Random();
         private bool jokerAktiviert = false;
+        private string richtigeAntwortText;
+
 
         public FormGame()
         {
@@ -49,7 +51,10 @@ namespace WerWirdReich
         private void btnClickController(object sender, EventArgs e)
         {
             gameController.CheckAnswer(sender);
-            gameController.UpdateGameData(labelQuestion, labelCash, btnA, btnB, btnC, btnD);
+
+            NeueFrage(); // ← HIER hinzufügen!
+
+            gameController.UpdateGameData(labelQuestion, btnA, btnB, btnC, btnD);
         }
 
 
@@ -58,22 +63,51 @@ namespace WerWirdReich
 
         private void btnJoker1_Click(object sender, EventArgs e)
         {
-            // falsche Antworten ermitteln
-            var falscheAntworten = antwortButtons
-                .Where(b => b != richtigeAntwort)
-                .OrderBy(x => rnd.Next())
-                .Take(2);
 
-            // ausblenden
+            if (jokerAktiviert)
+                return;
+
+            // Stelle sicher, dass die richtige Antwort gesetzt ist
+            if (string.IsNullOrEmpty(richtigeAntwortText))
+                richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
+
+            // Zwei falsche Antworten auswählen
+            var falscheAntworten = antwortButtons
+                .Where(b => b.Text != richtigeAntwortText) // nur falsche Antworten
+                .OrderBy(x => rnd.Next())
+                .Take(2)
+                .ToList();
+
             foreach (var btn in falscheAntworten)
             {
                 btn.Enabled = false;
-                btn.Visible = false; // oder nur Enabled=false
+                btn.Visible = false;
             }
-            
 
-
+            // Joker deaktivieren und ausgrauen
+            jokerAktiviert = true;
+            btnJoker1.Enabled = false;
+            btnJoker1.BackColor = Color.Gray;
+            btnJoker1.ForeColor = Color.White;
         }
+
+        private void NeueFrage()
+        {
+            foreach (var btn in antwortButtons)
+            {
+                btn.Visible = true;
+                btn.Enabled = true;
+            }
+
+            if (!jokerAktiviert)
+                btnJoker1.Enabled = true;
+
+            // Richtige Antwort für die neue Runde setzen
+            richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
+        }
+    
+
+
 
         private void btnJoker2_Click(object sender, EventArgs e)
         {

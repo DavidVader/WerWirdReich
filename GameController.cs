@@ -5,14 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using WerWirdReich.Models;
 using WerWirdReich.Services;
+
 
 namespace WerWirdReich
 {
     class GameController
     {
-        private System.Windows.Forms.Label lableQuestion, labelMoney;
+        private System.Windows.Forms.Label lableQuestion, labelMoney, labelRound;
         private Random random;
         private Player player;
         private int cash;
@@ -21,29 +23,34 @@ namespace WerWirdReich
         private QuestionService questionService;
         private int round;
         public GameController() { }
+        private bool zweitversuchJokerAktiv = false;
 
-        public void UpdateGameData(object question, object money, object btnA, object btnB, object btnC, object btnD)
+        public void UpdateGameData(object question, object money, object lRound, object btnA, object btnB, object btnC, object btnD)
         {
             if (this.questions == null) GenerateQuestions();
 
             this.lableQuestion = (Label)question;
             this.labelMoney = (Label)money;
+            this.labelRound = (Label)lRound;
             this.btnA = (Button)btnA;
             this.btnB = (Button)btnB;
             this.btnC = (Button)btnC;
             this.btnD = (Button)btnD;
 
+            
+            this.labelRound.Text = (round + 1).ToString();
             this.lableQuestion.Text = this.questions[this.round].Question.ToString();
 
             this.btnA.Text = this.questions[this.round].Answers[0].ToString();
             this.btnB.Text = this.questions[this.round].Answers[1].ToString();
             this.btnC.Text = this.questions[this.round].Answers[2].ToString();
             this.btnD.Text = this.questions[this.round].Answers[3].ToString();
-
+            
             round++;
+
         }
 
-        public void CheckAnswer(object sender)
+        public void CheckAnswer(object sender, Form currentForm)
         {
             Button clickedButton = (Button)sender;
 
@@ -55,10 +62,11 @@ namespace WerWirdReich
 
             if (questions[round - 1].RightAnswer != userAnswer)
             {
-                MessageBox.Show("Sie haben Verloren...");
-                GenerateQuestions();
-                round = 0;
-                cash = 0;
+                MessageBox.Show("Sie haben verloren!");
+
+                FormMenu menu = new FormMenu();
+                menu.Show();
+                currentForm.Hide();
             }
             else
             {

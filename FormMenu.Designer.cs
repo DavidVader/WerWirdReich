@@ -96,11 +96,14 @@
             // 
             // listBoxScoreBoard
             // 
+            listBoxScoreBoard.BackColor = Color.FromArgb(56, 68, 176);
+            listBoxScoreBoard.BorderStyle = BorderStyle.None;
+            listBoxScoreBoard.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listBoxScoreBoard.FormattingEnabled = true;
-            listBoxScoreBoard.ItemHeight = 25;
+            listBoxScoreBoard.ItemHeight = 37;
             listBoxScoreBoard.Location = new Point(607, 216);
             listBoxScoreBoard.Name = "listBoxScoreBoard";
-            listBoxScoreBoard.Size = new Size(373, 329);
+            listBoxScoreBoard.Size = new Size(373, 296);
             listBoxScoreBoard.TabIndex = 4;
             // 
             // FormMenu

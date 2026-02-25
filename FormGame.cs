@@ -42,7 +42,7 @@ namespace WerWirdReich
             };
 
             gameController = new GameController();
-            gameController.UpdateGameData(labelQuestion, labelCash, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, btnA, btnB, btnC, btnD);
         }
 
 
@@ -50,11 +50,11 @@ namespace WerWirdReich
 
         private void btnClickController(object sender, EventArgs e)
         {
-            gameController.CheckAnswer(sender);
+            gameController.CheckAnswer(sender, this);
 
             NeueFrage(); // ← HIER hinzufügen!
 
-            gameController.UpdateGameData(labelQuestion, labelCash, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, btnA, btnB, btnC, btnD);
         }
 
 
@@ -105,20 +105,18 @@ namespace WerWirdReich
             // Richtige Antwort für die neue Runde setzen
             richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
         }
-    
+
         public void checkJokerBox(bool dome)
         {
             if (!dome)
             {
                 btnJoker1.Visible = false;
                 btnJoker2.Visible = false;
-                btnZweitversuchJoker.Visible = false;
             }
             else
             {
                 btnJoker1.Visible = true;
                 btnJoker2.Visible = true;
-                btnZweitversuchJoker.Visible = true;
             }
         }
 
@@ -146,20 +144,6 @@ namespace WerWirdReich
 
             // Joker deaktivieren (nur 1x nutzbar)
             btnJoker2.Enabled = false;
-        }
-
-        private void btnZweitversuchJoker_Click(object sender, EventArgs e)
-        {
-            jokerAktiviert = true;
-            MessageBox.Show("Joker aktiviert! Wähle eine beliebige Antwort, um weiterzumachen.");
-
-            // Optional: alle Buttons aktiv lassen
-            foreach (var btn in antwortButtons)
-            {
-                btn.Enabled = true;
-            }
-
-            btnZweitversuchJoker.Enabled = false; // Joker nur einmal pro Frage
         }
     }
 }

@@ -30,8 +30,6 @@
         {
             cBoxPlayers = new ComboBox();
             tBoxPlayer = new TextBox();
-            checkBoxTimer = new CheckBox();
-            checkBoxJoker = new CheckBox();
             btnStart = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -42,48 +40,26 @@
             // cBoxPlayers
             // 
             cBoxPlayers.FormattingEnabled = true;
-            cBoxPlayers.Location = new Point(95, 57);
-            cBoxPlayers.Margin = new Padding(2, 2, 2, 2);
+            cBoxPlayers.Location = new Point(289, 111);
+            cBoxPlayers.Margin = new Padding(2);
             cBoxPlayers.Name = "cBoxPlayers";
-            cBoxPlayers.Size = new Size(158, 28);
+            cBoxPlayers.Size = new Size(196, 33);
             cBoxPlayers.TabIndex = 0;
             // 
             // tBoxPlayer
             // 
-            tBoxPlayer.Location = new Point(360, 58);
-            tBoxPlayer.Margin = new Padding(2, 2, 2, 2);
+            tBoxPlayer.Location = new Point(270, 218);
+            tBoxPlayer.Margin = new Padding(2);
             tBoxPlayer.Name = "tBoxPlayer";
-            tBoxPlayer.Size = new Size(181, 27);
+            tBoxPlayer.Size = new Size(225, 31);
             tBoxPlayer.TabIndex = 1;
-            // 
-            // checkBoxTimer
-            // 
-            checkBoxTimer.AutoSize = true;
-            checkBoxTimer.Location = new Point(239, 128);
-            checkBoxTimer.Margin = new Padding(2, 2, 2, 2);
-            checkBoxTimer.Name = "checkBoxTimer";
-            checkBoxTimer.Size = new Size(140, 24);
-            checkBoxTimer.TabIndex = 2;
-            checkBoxTimer.Text = "Spiele mit Timer";
-            checkBoxTimer.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxJoker
-            // 
-            checkBoxJoker.AutoSize = true;
-            checkBoxJoker.Location = new Point(239, 170);
-            checkBoxJoker.Margin = new Padding(2, 2, 2, 2);
-            checkBoxJoker.Name = "checkBoxJoker";
-            checkBoxJoker.Size = new Size(142, 24);
-            checkBoxJoker.TabIndex = 3;
-            checkBoxJoker.Text = "Spiele mit Jokers";
-            checkBoxJoker.UseVisualStyleBackColor = true;
             // 
             // btnStart
             // 
-            btnStart.Location = new Point(231, 246);
-            btnStart.Margin = new Padding(2, 2, 2, 2);
+            btnStart.Location = new Point(289, 308);
+            btnStart.Margin = new Padding(2);
             btnStart.Name = "btnStart";
-            btnStart.Size = new Size(140, 71);
+            btnStart.Size = new Size(175, 89);
             btnStart.TabIndex = 4;
             btnStart.Text = "Spiel starten";
             btnStart.UseVisualStyleBackColor = true;
@@ -92,38 +68,39 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(95, 34);
+            label1.Location = new Point(289, 82);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(166, 20);
+            label1.Size = new Size(197, 25);
             label1.TabIndex = 5;
             label1.Text = "Wähle einen Spieler aus";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(360, 34);
+            label2.Location = new Point(270, 188);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(191, 20);
+            label2.Size = new Size(225, 25);
             label2.TabIndex = 6;
             label2.Text = "Erstelle einen neuen Spieler";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(284, 59);
+            label3.Location = new Point(364, 152);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(40, 20);
+            label3.Size = new Size(49, 25);
             label3.TabIndex = 7;
             label3.Text = "oder";
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(563, 12);
+            btnBack.Location = new Point(704, 15);
+            btnBack.Margin = new Padding(4, 4, 4, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(65, 27);
+            btnBack.Size = new Size(81, 34);
             btnBack.TabIndex = 8;
             btnBack.Text = "Zurück";
             btnBack.UseVisualStyleBackColor = true;
@@ -131,19 +108,17 @@
             // 
             // FormCreateGame
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(640, 360);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnBack);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnStart);
-            Controls.Add(checkBoxJoker);
-            Controls.Add(checkBoxTimer);
             Controls.Add(tBoxPlayer);
             Controls.Add(cBoxPlayers);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormCreateGame";
             Text = "Spiel Einstellungen";
             ResumeLayout(false);
@@ -154,8 +129,6 @@
 
         private ComboBox cBoxPlayers;
         private TextBox tBoxPlayer;
-        private CheckBox checkBoxTimer;
-        private CheckBox checkBoxJoker;
         private Button btnStart;
         private Label label1;
         private Label label2;

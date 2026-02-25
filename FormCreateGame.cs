@@ -34,11 +34,6 @@ namespace WerWirdReich
                 TotalMoney = 0
             };
 
-
-            
-                FormCreateGame.checkJokerBox(checkBoxJoker.Checked);
-            
-
             PlayerService.CreatePlayer(player);
             game = new FormGame();
             game.Show();
@@ -50,11 +45,8 @@ namespace WerWirdReich
             menu = new FormMenu();
             menu.Show();
             this.Hide();
-        }
-
-        
+        }        
 
         private void CreateGame_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
-
     }
 }

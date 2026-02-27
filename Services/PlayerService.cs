@@ -5,7 +5,8 @@ namespace WerWirdReich.Services
 {
     class PlayerService
     {
-        private static readonly string SaveFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "player.json");
+        private static readonly string SaveFilePath = 
+            Path.Combine(AppContext.BaseDirectory, "Data", "player.json");
 
         public static List<Player> GetAllPlayers()
         {
@@ -13,7 +14,6 @@ namespace WerWirdReich.Services
             {
                 return new List<Player>();
             }
-
             try
             {
                 string json = File.ReadAllText(SaveFilePath);
@@ -34,13 +34,10 @@ namespace WerWirdReich.Services
             try
             {
                 var players = GetAllPlayers();
-
-                // Check if player already exists
                 if (players.Any(p => p.Name == newPlayer.Name))
                 {
-                    return false; // Player already exists
+                    return false;
                 }
-
                 players.Add(newPlayer);
                 SaveAllPlayers(players);
                 return true;
@@ -56,14 +53,12 @@ namespace WerWirdReich.Services
             {
                 var players = GetAllPlayers();
                 var playerIndex = players.FindIndex(p => p.Name == playerName);
-
                 if (playerIndex >= 0)
                 {
                     players[playerIndex] = updatedPlayer;
                     SaveAllPlayers(players);
                     return true;
                 }
-
                 return false;
             }
             catch
@@ -75,7 +70,6 @@ namespace WerWirdReich.Services
         {
             try
             {
-                // Create directory if it doesn't exist
                 string directory = Path.GetDirectoryName(SaveFilePath);
                 if (!Directory.Exists(directory) && !string.IsNullOrEmpty(directory))
                 {

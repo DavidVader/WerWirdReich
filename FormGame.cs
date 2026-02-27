@@ -13,6 +13,7 @@ namespace WerWirdReich
         private Random rnd = new Random();
         private bool jokerAktiviert = false;
         private string richtigeAntwortText;
+        private List<Label> labelRounds;
 
 
         public FormGame()
@@ -20,16 +21,11 @@ namespace WerWirdReich
             InitializeComponent();
             FormClosing += Game_FormClosing;
 
-            antwortButtons = new List<Button>
-            {
-                btnA,
-                btnB,
-                btnC,
-                btnD
-            };
+            antwortButtons = new List<Button> { btnA, btnB, btnC, btnD };
+            labelRounds = new List<Label> { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10 };
 
             gameController = new GameController();
-            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, labelName, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelRounds, labelName, btnA, btnB, btnC, btnD);
         }
 
         private void btnClickController(object sender, EventArgs e)
@@ -38,7 +34,7 @@ namespace WerWirdReich
 
             NeueFrage(); // ← HIER hinzufügen!
 
-            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, labelName, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelRounds, labelName, btnA, btnB, btnC, btnD);
         }
 
         private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();

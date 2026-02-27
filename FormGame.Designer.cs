@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGame));
             labelQuestion = new Label();
             labelName = new Label();
-            labelLevel = new Label();
-            labelCash = new Label();
             btnOption = new Button();
             btnA = new Button();
             btnB = new Button();
@@ -41,6 +39,15 @@
             btnJoker1 = new Button();
             btnJoker2 = new Button();
             label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
             SuspendLayout();
             // 
             // labelQuestion
@@ -65,33 +72,6 @@
             labelName.Size = new Size(64, 28);
             labelName.TabIndex = 2;
             labelName.Text = "label1";
-            // 
-            // labelLevel
-            // 
-            labelLevel.AutoSize = true;
-            labelLevel.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            labelLevel.Location = new Point(586, 11);
-            labelLevel.Margin = new Padding(5, 0, 5, 0);
-            labelLevel.Name = "labelLevel";
-            labelLevel.Size = new Size(23, 28);
-            labelLevel.TabIndex = 3;
-            labelLevel.Text = "1";
-            // 
-            // labelCash
-            // 
-            labelCash.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            labelCash.AutoSize = true;
-            labelCash.BackColor = Color.White;
-            labelCash.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            labelCash.ImageAlign = ContentAlignment.MiddleRight;
-            labelCash.Location = new Point(841, 14);
-            labelCash.Margin = new Padding(5, 0, 5, 0);
-            labelCash.Name = "labelCash";
-            labelCash.RightToLeft = RightToLeft.No;
-            labelCash.Size = new Size(77, 28);
-            labelCash.TabIndex = 4;
-            labelCash.Text = "0 MARK";
-            labelCash.TextAlign = ContentAlignment.TopRight;
             // 
             // btnOption
             // 
@@ -186,14 +166,123 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(192, 255, 255);
             label1.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            label1.Location = new Point(1092, 587);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(1019, 513);
+            label1.Margin = new Padding(4);
             label1.Name = "label1";
-            label1.Size = new Size(96, 28);
+            label1.Size = new Size(171, 28);
             label1.TabIndex = 13;
-            label1.Text = "1. 100 MK";
+            label1.Text = "1 | 50 MK";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            label2.BackColor = Color.FromArgb(192, 255, 255);
+            label2.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label2.Location = new Point(1019, 477);
+            label2.Margin = new Padding(4);
+            label2.Name = "label2";
+            label2.Size = new Size(171, 28);
+            label2.TabIndex = 14;
+            label2.Text = "2 | 100 MK";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(255, 255, 192);
+            label3.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label3.Location = new Point(1019, 441);
+            label3.Margin = new Padding(4);
+            label3.Name = "label3";
+            label3.Size = new Size(171, 28);
+            label3.TabIndex = 15;
+            label3.Text = "3 | 500 MK";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            label4.BackColor = Color.FromArgb(255, 255, 192);
+            label4.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label4.Location = new Point(1019, 405);
+            label4.Margin = new Padding(4);
+            label4.Name = "label4";
+            label4.Size = new Size(171, 28);
+            label4.TabIndex = 16;
+            label4.Text = "4 | 1.000 MK";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            label5.BackColor = Color.FromArgb(255, 255, 192);
+            label5.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label5.Location = new Point(1019, 369);
+            label5.Margin = new Padding(4);
+            label5.Name = "label5";
+            label5.Size = new Size(171, 28);
+            label5.TabIndex = 17;
+            label5.Text = "5 | 5.000 MK";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            label6.BackColor = Color.FromArgb(255, 192, 192);
+            label6.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label6.Location = new Point(1019, 333);
+            label6.Margin = new Padding(4);
+            label6.Name = "label6";
+            label6.Size = new Size(171, 28);
+            label6.TabIndex = 18;
+            label6.Text = "6 | 10.000 MK";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            label7.BackColor = Color.FromArgb(255, 192, 192);
+            label7.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label7.Location = new Point(1019, 297);
+            label7.Margin = new Padding(4);
+            label7.Name = "label7";
+            label7.Size = new Size(171, 28);
+            label7.TabIndex = 19;
+            label7.Text = "7 | 50.000 MK";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            label8.BackColor = Color.FromArgb(255, 192, 192);
+            label8.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label8.Location = new Point(1019, 261);
+            label8.Margin = new Padding(4);
+            label8.Name = "label8";
+            label8.Size = new Size(171, 28);
+            label8.TabIndex = 20;
+            label8.Text = "8 | 100.000 MK";
+            label8.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            label9.BackColor = Color.FromArgb(255, 192, 192);
+            label9.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label9.Location = new Point(1019, 225);
+            label9.Margin = new Padding(4);
+            label9.Name = "label9";
+            label9.Size = new Size(171, 28);
+            label9.TabIndex = 21;
+            label9.Text = "9 | 500.000 MK";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            label10.BackColor = Color.FromArgb(255, 192, 192);
+            label10.Font = new Font("Franklin Gothic Medium Cond", 11F);
+            label10.Location = new Point(1019, 189);
+            label10.Margin = new Padding(4);
+            label10.Name = "label10";
+            label10.Size = new Size(171, 28);
+            label10.TabIndex = 22;
+            label10.Text = "10 | 1.000.000 MK";
+            label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormGame
             // 
@@ -202,6 +291,15 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1201, 702);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnJoker2);
             Controls.Add(btnJoker1);
@@ -210,8 +308,6 @@
             Controls.Add(btnB);
             Controls.Add(btnA);
             Controls.Add(btnOption);
-            Controls.Add(labelCash);
-            Controls.Add(labelLevel);
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
             Margin = new Padding(5);
@@ -224,8 +320,6 @@
         #endregion
         private Label labelQuestion;
         private Label labelName;
-        private Label labelLevel;
-        private Label labelCash;
         private Button btnOption;
         private Button btnA;
         private Button btnB;
@@ -234,5 +328,14 @@
         private Button btnJoker1;
         private Button btnJoker2;
         private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
     }
 }

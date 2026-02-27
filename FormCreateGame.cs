@@ -20,8 +20,7 @@ namespace WerWirdReich
                 cBoxPlayers.Items.Add(player.Name);
             }
         }
-
-        private void btnStart_Click(object sender, EventArgs e)
+        private void CreateOrSelectPlayer()
         {
             if (!string.IsNullOrWhiteSpace(tBoxPlayer.Text))
             {
@@ -55,18 +54,20 @@ namespace WerWirdReich
             {
                 playerName = this.playerList[0].Name;
             }
+        }
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            CreateOrSelectPlayer();
             game = new FormGame();
             game.Show();
             this.Hide();
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             menu = new FormMenu();
             menu.Show();
             this.Hide();
         }
-
         private void CreateGame_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }
 }

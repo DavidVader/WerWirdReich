@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using WerWirdReich.Models;
 
 namespace WerWirdReich.Services
@@ -55,18 +50,6 @@ namespace WerWirdReich.Services
                 return false;
             }
         }
-        //public static bool CreatePlayer(string name, int highScore = 0, int playthrough = 0, int money = 0)
-        //{
-        //    var player = new Player
-        //    {
-        //        Name = name,
-        //        HighScore = highScore,
-        //        AmountOfPlaythrough = playthrough,
-        //        TotalMoney = money
-        //    };
-
-        //    return CreatePlayer(player);
-        //}
         public static bool EditPlayer(string playerName, Player updatedPlayer)
         {
             try
@@ -81,49 +64,7 @@ namespace WerWirdReich.Services
                     return true;
                 }
 
-                return false; // Player not found
-            }
-            catch
-            {
                 return false;
-            }
-        }
-        public static bool EditPlayerProperty(string playerName, Action<Player> updateAction)
-        {
-            try
-            {
-                var players = GetAllPlayers();
-                var player = players.FirstOrDefault(p => p.Name == playerName);
-
-                if (player != null)
-                {
-                    updateAction(player);
-                    SaveAllPlayers(players);
-                    return true;
-                }
-
-                return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-        public static bool DeletePlayer(string playerName)
-        {
-            try
-            {
-                var players = GetAllPlayers();
-                var playerToRemove = players.FirstOrDefault(p => p.Name == playerName);
-
-                if (playerToRemove != null)
-                {
-                    players.Remove(playerToRemove);
-                    SaveAllPlayers(players);
-                    return true;
-                }
-
-                return false; // Player not found
             }
             catch
             {

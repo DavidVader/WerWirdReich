@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using WerWirdReich.Models;
 
 namespace WerWirdReich.Services
@@ -29,8 +24,8 @@ namespace WerWirdReich.Services
             var normal = allQuestions.Where(q => q.Level == 2).ToList();
             var hard = allQuestions.Where(q => q.Level == 3).ToList();
 
-            AddRandom(result, easy, 5, rnd);
-            AddRandom(result, normal, 10, rnd);
+            AddRandom(result, easy, 2, rnd);
+            AddRandom(result, normal, 3, rnd);
             AddRandom(result, hard, 5, rnd);
 
             return result;

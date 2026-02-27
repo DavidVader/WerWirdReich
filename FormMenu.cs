@@ -24,7 +24,6 @@ namespace WerWirdReich
         {
             option = new FormOption();
             option.Show();
-            this.Hide();
         }
 
         private void setScoreBoard()

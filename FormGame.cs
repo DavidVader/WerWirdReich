@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Runtime.CompilerServices;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using WerWirdReich.Models;
-using System.Linq;
+﻿using System.Data;
 
 
 namespace WerWirdReich
@@ -42,11 +29,8 @@ namespace WerWirdReich
             };
 
             gameController = new GameController();
-            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, labelName, btnA, btnB, btnC, btnD);
         }
-
-
-
 
         private void btnClickController(object sender, EventArgs e)
         {
@@ -54,12 +38,10 @@ namespace WerWirdReich
 
             NeueFrage(); // ← HIER hinzufügen!
 
-            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelCash, labelLevel, labelName, btnA, btnB, btnC, btnD);
         }
 
-
         private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
-
 
         private void btnJoker1_Click(object sender, EventArgs e)
         {
@@ -119,7 +101,6 @@ namespace WerWirdReich
                 btnJoker2.Visible = true;
             }
         }
-
 
         private void btnJoker2_Click(object sender, EventArgs e)
         {

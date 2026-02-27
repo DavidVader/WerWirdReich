@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using WerWirdReich.Models;
+﻿using WerWirdReich.Models;
 using WerWirdReich.Services;
 
 
@@ -14,7 +6,7 @@ namespace WerWirdReich
 {
     class GameController
     {
-        private System.Windows.Forms.Label lableQuestion, labelMoney, labelRound;
+        private System.Windows.Forms.Label lableQuestion, labelMoney, labelRound, labelPlayer;
         private Random random;
         private Player player;
         private int cash;
@@ -22,32 +14,33 @@ namespace WerWirdReich
         public List<Questions> questions;
         private QuestionService questionService;
         private int round;
-        public GameController() { }
-        private bool zweitversuchJokerAktiv = false;
+        private string playerName = FormCreateGame.playerName;
 
-        public void UpdateGameData(object question, object money, object lRound, object btnA, object btnB, object btnC, object btnD)
+        public GameController() { }
+
+        public void UpdateGameData(object question, object money, object lRound, object lPlayer, object btnA, object btnB, object btnC, object btnD)
         {
             if (this.questions == null) GenerateQuestions();
 
             this.lableQuestion = (Label)question;
             this.labelMoney = (Label)money;
             this.labelRound = (Label)lRound;
+            this.labelPlayer = (Label)lPlayer;
             this.btnA = (Button)btnA;
             this.btnB = (Button)btnB;
             this.btnC = (Button)btnC;
             this.btnD = (Button)btnD;
 
-            
             this.labelRound.Text = (round + 1).ToString();
+            this.labelPlayer.Text = this.playerName;
             this.lableQuestion.Text = this.questions[this.round].Question.ToString();
 
             this.btnA.Text = this.questions[this.round].Answers[0].ToString();
             this.btnB.Text = this.questions[this.round].Answers[1].ToString();
             this.btnC.Text = this.questions[this.round].Answers[2].ToString();
             this.btnD.Text = this.questions[this.round].Answers[3].ToString();
-            
-            round++;
 
+            round++;
         }
 
         public void CheckAnswer(object sender, Form currentForm)

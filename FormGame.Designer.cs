@@ -47,7 +47,7 @@
             // 
             labelQuestion.BackColor = Color.FromArgb(100, 100, 255);
             labelQuestion.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelQuestion.Location = new Point(225, 78);
+            labelQuestion.Location = new Point(230, 189);
             labelQuestion.Margin = new Padding(4, 0, 4, 0);
             labelQuestion.Name = "labelQuestion";
             labelQuestion.Size = new Size(741, 132);
@@ -84,7 +84,7 @@
             labelCash.BackColor = Color.White;
             labelCash.Font = new Font("Franklin Gothic Medium Cond", 11F);
             labelCash.ImageAlign = ContentAlignment.MiddleRight;
-            labelCash.Location = new Point(890, 14);
+            labelCash.Location = new Point(841, 14);
             labelCash.Margin = new Padding(5, 0, 5, 0);
             labelCash.Name = "labelCash";
             labelCash.RightToLeft = RightToLeft.No;
@@ -109,7 +109,7 @@
             btnA.BackColor = Color.FromArgb(192, 192, 255);
             btnA.FlatStyle = FlatStyle.Flat;
             btnA.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnA.Location = new Point(225, 226);
+            btnA.Location = new Point(230, 337);
             btnA.Margin = new Padding(5);
             btnA.Name = "btnA";
             btnA.Size = new Size(368, 100);
@@ -123,7 +123,7 @@
             btnB.BackColor = Color.FromArgb(192, 192, 255);
             btnB.FlatStyle = FlatStyle.Flat;
             btnB.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnB.Location = new Point(603, 226);
+            btnB.Location = new Point(608, 337);
             btnB.Margin = new Padding(5);
             btnB.Name = "btnB";
             btnB.Size = new Size(363, 100);
@@ -137,7 +137,7 @@
             btnC.BackColor = Color.FromArgb(192, 192, 255);
             btnC.FlatStyle = FlatStyle.Flat;
             btnC.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnC.Location = new Point(225, 336);
+            btnC.Location = new Point(230, 447);
             btnC.Margin = new Padding(5);
             btnC.Name = "btnC";
             btnC.Size = new Size(368, 100);
@@ -151,7 +151,7 @@
             btnD.BackColor = Color.FromArgb(192, 192, 255);
             btnD.FlatStyle = FlatStyle.Flat;
             btnD.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnD.Location = new Point(603, 336);
+            btnD.Location = new Point(608, 447);
             btnD.Margin = new Padding(5);
             btnD.Name = "btnD";
             btnD.Size = new Size(363, 100);
@@ -188,7 +188,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            label1.Location = new Point(1130, 588);
+            label1.Location = new Point(1092, 587);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(96, 28);
@@ -201,7 +201,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1250, 702);
+            ClientSize = new Size(1201, 702);
             Controls.Add(label1);
             Controls.Add(btnJoker2);
             Controls.Add(btnJoker1);

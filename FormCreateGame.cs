@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml.Linq;
-using WerWirdReich.Models;
+﻿using WerWirdReich.Models;
 using WerWirdReich.Services;
 
 namespace WerWirdReich
@@ -18,23 +7,54 @@ namespace WerWirdReich
     {
         private FormGame game;
         private FormMenu menu;
+        private List<Player> playerList = PlayerService.GetAllPlayers();
+
+        public static string playerName = "";
         public FormCreateGame()
         {
             InitializeComponent();
             FormClosing += CreateGame_FormClosing;
+
+            foreach (Player player in this.playerList)
+            {
+                cBoxPlayers.Items.Add(player.Name);
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            var player = new Player
+            if (!string.IsNullOrWhiteSpace(tBoxPlayer.Text))
             {
-                Name = tBoxPlayer.Text,
-                HighScore = 0,
-                AmountOfPlaythrough = 0,
-                TotalMoney = 0
-            };
-
-            PlayerService.CreatePlayer(player);
+                var player = new Player
+                {
+                    Name = tBoxPlayer.Text,
+                    HighScore = 0,
+                    AmountOfPlaythrough = 0,
+                    TotalMoney = 0
+                };
+                playerName = tBoxPlayer.Text;
+                PlayerService.CreatePlayer(player);
+            }
+            else if (cBoxPlayers.SelectedItem != null)
+            {
+                playerName = cBoxPlayers.SelectedItem.ToString();
+            }
+            else if (this.playerList[0] == null)
+            {
+                playerName = "Spieler1";
+                var player = new Player
+                {
+                    Name = playerName,
+                    HighScore = 0,
+                    AmountOfPlaythrough = 0,
+                    TotalMoney = 0
+                };
+                PlayerService.CreatePlayer(player);
+            }
+            else
+            {
+                playerName = this.playerList[0].Name;
+            }
             game = new FormGame();
             game.Show();
             this.Hide();
@@ -45,7 +65,7 @@ namespace WerWirdReich
             menu = new FormMenu();
             menu.Show();
             this.Hide();
-        }        
+        }
 
         private void CreateGame_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }

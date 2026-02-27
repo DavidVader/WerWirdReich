@@ -6,9 +6,8 @@ namespace WerWirdReich
     public partial class FormGame : Form
     {
         private GameController gameController;
+        private FormOption fOption;
         private int round = 0;
-
-        private Button richtigeAntwort;
         private List<Button> antwortButtons;
         private Random rnd = new Random();
         private bool jokerAktiviert = false;
@@ -31,27 +30,21 @@ namespace WerWirdReich
         private void btnClickController(object sender, EventArgs e)
         {
             gameController.CheckAnswer(sender, this);
-
-            NeueFrage(); // ← HIER hinzufügen!
-
+            NewQuestion();
             gameController.UpdateGameData(labelQuestion, labelRounds, labelName, btnA, btnB, btnC, btnD);
         }
 
-        private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
-
         private void btnJoker1_Click(object sender, EventArgs e)
         {
+            if (jokerAktiviert) return;
 
-            if (jokerAktiviert)
-                return;
-
-            // Stelle sicher, dass die richtige Antwort gesetzt ist
+            // Setzt Richtige Antwort
             int richtigeIndex = gameController.CurrentQuestion.RightAnswer;
             richtigeAntwortText = antwortButtons[richtigeIndex].Text;
 
             // Zwei falsche Antworten auswählen
             var falscheAntworten = antwortButtons
-                .Where(b => b.Text != richtigeAntwortText) // nur falsche Antworten
+                .Where(b => b.Text != richtigeAntwortText)
                 .OrderBy(x => rnd.Next())
                 .Take(2)
                 .ToList();
@@ -62,14 +55,13 @@ namespace WerWirdReich
                 btn.Visible = false;
             }
 
-            // Joker deaktivieren und ausgrauen
             jokerAktiviert = true;
             btnJoker1.Enabled = false;
             btnJoker1.BackColor = Color.Gray;
             btnJoker1.ForeColor = Color.White;
         }
 
-        private void NeueFrage()
+        private void NewQuestion()
         {
             foreach (var btn in antwortButtons)
             {
@@ -77,30 +69,14 @@ namespace WerWirdReich
                 btn.Enabled = true;
             }
 
-            if (!jokerAktiviert)
-                btnJoker1.Enabled = true;
+            if (!jokerAktiviert) btnJoker1.Enabled = true;
 
             // Richtige Antwort für die neue Runde setzen
             richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
         }
 
-        public void checkJokerBox(bool dome)
-        {
-            if (!dome)
-            {
-                btnJoker1.Visible = false;
-                btnJoker2.Visible = false;
-            }
-            else
-            {
-                btnJoker1.Visible = true;
-                btnJoker2.Visible = true;
-            }
-        }
-
         private void btnJoker2_Click(object sender, EventArgs e)
         {
-            // Richtigen Index holen
             int richtigeIndex = gameController.CurrentCorrectIndex;
 
             // Liste aller falschen Antworten erstellen
@@ -109,18 +85,31 @@ namespace WerWirdReich
                 .ToList();
 
             // Sicherheitscheck (falls schon alles ausgeblendet wurde)
-            if (falscheAntworten.Count == 0)
-                return;
+            if (falscheAntworten.Count == 0) return;
 
             // Eine falsche zufällig auswählen
             Button auszublenden = falscheAntworten[rnd.Next(falscheAntworten.Count)];
-
-            // Ausblenden
             auszublenden.Enabled = false;
             auszublenden.Visible = false;
 
-            // Joker deaktivieren (nur 1x nutzbar)
             btnJoker2.Enabled = false;
+            btnJoker2.BackColor = Color.Gray;
+            btnJoker2.ForeColor = Color.White;
         }
+
+        private void btnOption_Click(object sender, EventArgs e)
+        {
+            fOption = new FormOption();
+            fOption.Show();
+        }
+
+        /*
+         * This Function is closing the whole Application, 
+         * since the main Form (Menu) is still running in the background...
+         * THATS WHY WE COULD NOT START THE PROGRAM, since it already runs in the background...
+         * 
+         * ~ David
+         */
+        private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }
 }

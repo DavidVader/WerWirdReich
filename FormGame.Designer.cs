@@ -54,10 +54,10 @@
             // 
             labelQuestion.BackColor = Color.FromArgb(100, 100, 255);
             labelQuestion.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelQuestion.Location = new Point(230, 189);
+            labelQuestion.Location = new Point(230, 14);
             labelQuestion.Margin = new Padding(4, 0, 4, 0);
             labelQuestion.Name = "labelQuestion";
-            labelQuestion.Size = new Size(741, 132);
+            labelQuestion.Size = new Size(728, 160);
             labelQuestion.TabIndex = 1;
             labelQuestion.Text = "Fragen";
             labelQuestion.TextAlign = ContentAlignment.MiddleCenter;
@@ -65,34 +65,36 @@
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            labelName.Location = new Point(15, 11);
+            labelName.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelName.Location = new Point(13, 14);
             labelName.Margin = new Padding(4, 0, 4, 0);
             labelName.Name = "labelName";
-            labelName.Size = new Size(64, 28);
+            labelName.Size = new Size(91, 37);
             labelName.TabIndex = 2;
             labelName.Text = "label1";
             // 
             // btnOption
             // 
+            btnOption.FlatStyle = FlatStyle.Flat;
             btnOption.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnOption.Location = new Point(1081, 14);
+            btnOption.Location = new Point(1078, 14);
             btnOption.Margin = new Padding(5);
             btnOption.Name = "btnOption";
             btnOption.Size = new Size(109, 42);
             btnOption.TabIndex = 5;
             btnOption.Text = "Einstellungen";
             btnOption.UseVisualStyleBackColor = true;
+            btnOption.Click += btnOption_Click;
             // 
             // btnA
             // 
             btnA.BackColor = Color.FromArgb(192, 192, 255);
             btnA.FlatStyle = FlatStyle.Flat;
             btnA.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnA.Location = new Point(230, 337);
+            btnA.Location = new Point(231, 277);
             btnA.Margin = new Padding(5);
             btnA.Name = "btnA";
-            btnA.Size = new Size(368, 100);
+            btnA.Size = new Size(360, 120);
             btnA.TabIndex = 6;
             btnA.Text = "A";
             btnA.UseVisualStyleBackColor = false;
@@ -103,10 +105,10 @@
             btnB.BackColor = Color.FromArgb(192, 192, 255);
             btnB.FlatStyle = FlatStyle.Flat;
             btnB.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnB.Location = new Point(608, 337);
+            btnB.Location = new Point(598, 277);
             btnB.Margin = new Padding(5);
             btnB.Name = "btnB";
-            btnB.Size = new Size(363, 100);
+            btnB.Size = new Size(360, 120);
             btnB.TabIndex = 7;
             btnB.Text = "B";
             btnB.UseVisualStyleBackColor = false;
@@ -117,10 +119,10 @@
             btnC.BackColor = Color.FromArgb(192, 192, 255);
             btnC.FlatStyle = FlatStyle.Flat;
             btnC.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnC.Location = new Point(230, 447);
+            btnC.Location = new Point(228, 407);
             btnC.Margin = new Padding(5);
             btnC.Name = "btnC";
-            btnC.Size = new Size(368, 100);
+            btnC.Size = new Size(360, 120);
             btnC.TabIndex = 8;
             btnC.Text = "C";
             btnC.UseVisualStyleBackColor = false;
@@ -131,10 +133,10 @@
             btnD.BackColor = Color.FromArgb(192, 192, 255);
             btnD.FlatStyle = FlatStyle.Flat;
             btnD.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnD.Location = new Point(608, 447);
+            btnD.Location = new Point(598, 407);
             btnD.Margin = new Padding(5);
             btnD.Name = "btnD";
-            btnD.Size = new Size(363, 100);
+            btnD.Size = new Size(360, 120);
             btnD.TabIndex = 9;
             btnD.Text = "D";
             btnD.UseVisualStyleBackColor = false;
@@ -142,11 +144,12 @@
             // 
             // btnJoker1
             // 
+            btnJoker1.FlatStyle = FlatStyle.Flat;
             btnJoker1.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnJoker1.Location = new Point(14, 78);
+            btnJoker1.Location = new Point(14, 277);
             btnJoker1.Margin = new Padding(5);
             btnJoker1.Name = "btnJoker1";
-            btnJoker1.Size = new Size(118, 36);
+            btnJoker1.Size = new Size(200, 54);
             btnJoker1.TabIndex = 10;
             btnJoker1.Text = "50 / 50";
             btnJoker1.UseVisualStyleBackColor = true;
@@ -154,11 +157,12 @@
             // 
             // btnJoker2
             // 
+            btnJoker2.FlatStyle = FlatStyle.Flat;
             btnJoker2.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnJoker2.Location = new Point(14, 124);
+            btnJoker2.Location = new Point(14, 341);
             btnJoker2.Margin = new Padding(5);
             btnJoker2.Name = "btnJoker2";
-            btnJoker2.Size = new Size(118, 36);
+            btnJoker2.Size = new Size(200, 54);
             btnJoker2.TabIndex = 11;
             btnJoker2.Text = "25 / 75";
             btnJoker2.UseVisualStyleBackColor = true;

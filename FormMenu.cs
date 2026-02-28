@@ -16,12 +16,14 @@ namespace WerWirdReich
 
         private void btnGame_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
             createGame = new FormCreateGame();
             createGame.Show();
             this.Hide();
         }
         private void btnOption_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
             option = new FormOption();
             option.Show();
         }

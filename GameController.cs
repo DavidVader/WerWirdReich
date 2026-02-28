@@ -75,6 +75,7 @@ namespace WerWirdReich
                 PlayerService.EditPlayer(this.playerName, player);
 
                 MusicService.StopMusic();
+                SoundService.ButtonSounds.Wrong();
 
                 MessageBox.Show("Sie haben verloren!");
                 GameOver = true;

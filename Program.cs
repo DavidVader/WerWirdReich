@@ -1,3 +1,5 @@
+using WerWirdReich.Services;
+
 namespace WerWirdReich
 {
     internal static class Program
@@ -12,6 +14,7 @@ namespace WerWirdReich
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new FormMenu());
+            MusicService.Cleanup();
         }
     }
 }

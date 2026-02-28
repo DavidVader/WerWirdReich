@@ -44,7 +44,7 @@
             btnGame.Cursor = Cursors.Hand;
             btnGame.FlatAppearance.BorderSize = 0;
             btnGame.FlatStyle = FlatStyle.Flat;
-            btnGame.Font = new Font("Sans Serif Collection", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGame.Font = new Font("Sans Serif Collection", 14F, FontStyle.Bold);
             btnGame.Location = new Point(244, 216);
             btnGame.Margin = new Padding(2);
             btnGame.Name = "btnGame";
@@ -98,7 +98,7 @@
             // 
             listBoxScoreBoard.BackColor = Color.FromArgb(56, 68, 176);
             listBoxScoreBoard.BorderStyle = BorderStyle.None;
-            listBoxScoreBoard.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBoxScoreBoard.Font = new Font("Franklin Gothic Medium Cond", 16F);
             listBoxScoreBoard.FormattingEnabled = true;
             listBoxScoreBoard.ItemHeight = 37;
             listBoxScoreBoard.Location = new Point(607, 216);
@@ -108,8 +108,8 @@
             // 
             // FormMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(144F, 144F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1130, 712);
@@ -120,7 +120,9 @@
             Controls.Add(btnGame);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
+            MinimumSize = new Size(1152, 768);
             Name = "FormMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "WER WIRD REICH";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

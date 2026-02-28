@@ -40,6 +40,7 @@
             // cBoxPlayers
             // 
             cBoxPlayers.BackColor = Color.FromArgb(64, 64, 64);
+            cBoxPlayers.DropDownStyle = ComboBoxStyle.DropDownList;
             cBoxPlayers.FlatStyle = FlatStyle.Flat;
             cBoxPlayers.Font = new Font("Franklin Gothic Medium Cond", 11F);
             cBoxPlayers.ForeColor = SystemColors.Control;

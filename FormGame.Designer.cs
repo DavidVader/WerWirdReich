@@ -48,6 +48,7 @@
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
+            labelJ = new Label();
             SuspendLayout();
             // 
             // labelQuestion
@@ -66,21 +67,21 @@
             // 
             labelName.AutoSize = true;
             labelName.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelName.Location = new Point(13, 14);
+            labelName.Location = new Point(12, 14);
             labelName.Margin = new Padding(4, 0, 4, 0);
             labelName.Name = "labelName";
-            labelName.Size = new Size(91, 37);
+            labelName.Size = new Size(165, 37);
             labelName.TabIndex = 2;
-            labelName.Text = "label1";
+            labelName.Text = "Spielername";
             // 
             // btnOption
             // 
             btnOption.FlatStyle = FlatStyle.Flat;
             btnOption.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            btnOption.Location = new Point(1078, 14);
+            btnOption.Location = new Point(1019, 14);
             btnOption.Margin = new Padding(5);
             btnOption.Name = "btnOption";
-            btnOption.Size = new Size(109, 42);
+            btnOption.Size = new Size(168, 48);
             btnOption.TabIndex = 5;
             btnOption.Text = "Einstellungen";
             btnOption.UseVisualStyleBackColor = true;
@@ -220,7 +221,7 @@
             // 
             label5.BackColor = Color.FromArgb(255, 255, 192);
             label5.Font = new Font("Franklin Gothic Medium Cond", 11F);
-            label5.Location = new Point(1019, 369);
+            label5.Location = new Point(1019, 368);
             label5.Margin = new Padding(4);
             label5.Name = "label5";
             label5.Size = new Size(171, 28);
@@ -288,6 +289,19 @@
             label10.Text = "10 | 1.000.000 MK";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // labelJ
+            // 
+            labelJ.BackColor = Color.Transparent;
+            labelJ.Font = new Font("Franklin Gothic Medium Cond", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelJ.ForeColor = Color.White;
+            labelJ.Location = new Point(12, 222);
+            labelJ.Margin = new Padding(4, 0, 4, 0);
+            labelJ.Name = "labelJ";
+            labelJ.Size = new Size(201, 50);
+            labelJ.TabIndex = 23;
+            labelJ.Text = "Jokers";
+            labelJ.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // FormGame
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -295,6 +309,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1201, 702);
+            Controls.Add(labelJ);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
@@ -341,5 +356,6 @@
         private Label label8;
         private Label label9;
         private Label label10;
+        private Label labelJ;
     }
 }

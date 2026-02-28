@@ -16,7 +16,10 @@ namespace WerWirdReich
         private string playerName = FormCreateGame.playerName;
         public bool GameOver { get; private set; } = false;
 
-        public GameController() { }
+        public GameController()
+        {
+            MusicService.StartMusic();
+        }
 
         public void UpdateGameData(object question, List<Label> lRounds, object lPlayer, List<Button> antworten)
         {
@@ -70,6 +73,7 @@ namespace WerWirdReich
                 player.AmountOfPlaythrough++;
                 player.HighScore = round > 0 ? Math.Max(player.HighScore, cash[round - 1]) : player.HighScore;
                 PlayerService.EditPlayer(this.playerName, player);
+                MusicService.StopMusic();
 
                 MessageBox.Show("Sie haben verloren!");
                 GameOver = true;

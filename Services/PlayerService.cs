@@ -5,8 +5,7 @@ namespace WerWirdReich.Services
 {
     class PlayerService
     {
-        private static readonly string SaveFilePath = 
-            Path.Combine(AppContext.BaseDirectory, "Data", "player.json");
+        private static readonly string SaveFilePath = Path.Combine(AppContext.BaseDirectory, "Data", "player.json");
 
         public static List<Player> GetAllPlayers()
         {

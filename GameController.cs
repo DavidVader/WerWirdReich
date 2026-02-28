@@ -73,6 +73,7 @@ namespace WerWirdReich
                 player.AmountOfPlaythrough++;
                 player.HighScore = round > 0 ? Math.Max(player.HighScore, cash[round - 1]) : player.HighScore;
                 PlayerService.EditPlayer(this.playerName, player);
+
                 MusicService.StopMusic();
 
                 MessageBox.Show("Sie haben verloren!");

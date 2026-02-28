@@ -92,25 +92,9 @@ namespace WerWirdReich.Services
             }
         }
 
-        public static void SetVolume(float volume)
-        {
-            // Direkt als Float (0.0 - 1.0)
-            currentVolume = Math.Clamp(volume, 0f, 1f);
-
-            if (audioFile != null)
-            {
-                audioFile.Volume = currentVolume;
-            }
-        }
-
         public static int GetVolumePercent()
         {
             return (int)(currentVolume * 100);
-        }
-
-        public static float GetVolume()
-        {
-            return currentVolume;
         }
 
         public static bool IsPlaying

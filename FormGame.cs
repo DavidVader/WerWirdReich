@@ -7,13 +7,11 @@ namespace WerWirdReich
     {
         private GameController gameController;
         private FormOption fOption;
-        private int round = 0;
         private List<Button> antwortButtons;
         private Random rnd = new Random();
         private bool jokerAktiviert = false;
         private string richtigeAntwortText;
         private List<Label> labelRounds;
-
 
         public FormGame()
         {
@@ -24,14 +22,17 @@ namespace WerWirdReich
             labelRounds = new List<Label> { label1, label2, label3, label4, label5, label6, label7, label8, label9, label10 };
 
             gameController = new GameController();
-            gameController.UpdateGameData(labelQuestion, labelRounds, labelName, btnA, btnB, btnC, btnD);
+            gameController.UpdateGameData(labelQuestion, labelRounds, labelName, antwortButtons);
         }
 
         private void btnClickController(object sender, EventArgs e)
         {
             gameController.CheckAnswer(sender, this);
-            NewQuestion();
-            gameController.UpdateGameData(labelQuestion, labelRounds, labelName, btnA, btnB, btnC, btnD);
+
+            if (!gameController.GameOver)
+            {
+                gameController.LoadNextQuestion();
+            }
         }
 
         private void btnJoker1_Click(object sender, EventArgs e)
@@ -39,12 +40,12 @@ namespace WerWirdReich
             if (jokerAktiviert) return;
 
             // Setzt Richtige Antwort
-            int richtigeIndex = gameController.CurrentQuestion.RightAnswer;
+            int richtigeIndex = gameController.CurrentCorrectIndex;
             richtigeAntwortText = antwortButtons[richtigeIndex].Text;
 
             // Zwei falsche Antworten auswählen
             var falscheAntworten = antwortButtons
-                .Where(b => b.Text != richtigeAntwortText)
+                .Where(b => b.Text != richtigeAntwortText && b.Visible)
                 .OrderBy(x => rnd.Next())
                 .Take(2)
                 .ToList();
@@ -59,20 +60,6 @@ namespace WerWirdReich
             btnJoker1.Enabled = false;
             btnJoker1.BackColor = Color.Gray;
             btnJoker1.ForeColor = Color.White;
-        }
-
-        private void NewQuestion()
-        {
-            foreach (var btn in antwortButtons)
-            {
-                btn.Visible = true;
-                btn.Enabled = true;
-            }
-
-            if (!jokerAktiviert) btnJoker1.Enabled = true;
-
-            // Richtige Antwort für die neue Runde setzen
-            richtigeAntwortText = gameController.questions[round].RightAnswer.ToString();
         }
 
         private void btnJoker2_Click(object sender, EventArgs e)
@@ -110,6 +97,7 @@ namespace WerWirdReich
          * 
          * ~ David
          */
+
         private void Game_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }
 }

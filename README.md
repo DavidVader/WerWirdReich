@@ -12,7 +12,7 @@ WerWirdReich ist ein Windows Forms Spiel, das von der bekannten TV-Show "Wer wir
 ## Installation
 Repository klonen:
 ``` bash
-git clone https://github.com/IhrUsername/WerWirdReich.git
+git clone https://github.com/DavidVader/WerWirdReich.git
 ```
 - In Visual Studio öffnen
 - NuGet-Pakete wiederherstellen

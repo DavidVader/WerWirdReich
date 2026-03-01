@@ -113,11 +113,6 @@ namespace WerWirdReich
             }
         }
 
-        public Questions CurrentQuestion
-        {
-            get { return questions[round]; }
-        }
-
         public int CurrentCorrectIndex
         {
             get { return questions[round].RightAnswer; }

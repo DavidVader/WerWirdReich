@@ -5,10 +5,10 @@ namespace WerWirdReich
 {
     public partial class FormOption : Form
     {
-        private readonly string musicFilePath = Path.Combine(AppContext.BaseDirectory, "Assets", "WwMTheme.wav");
-        private AudioFileReader audioFile;
-        private WaveOutEvent outputDevice;
-        private bool isPlaying = false;
+        //private readonly string musicFilePath = Path.Combine(AppContext.BaseDirectory, "Assets", "WwMTheme.wav");
+        //private AudioFileReader audioFile;
+        //private WaveOutEvent outputDevice;
+        //private bool isPlaying = false;
 
         public FormOption()
         {
@@ -28,6 +28,8 @@ namespace WerWirdReich
 
         private void btnMusicOn_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
+
             if (!MusicService.IsPlaying)
             {
                 MusicService.StartMusic();
@@ -40,6 +42,8 @@ namespace WerWirdReich
 
         private void btnMusicOff_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
+
             MusicService.PauseMusic(); // oder StopMusic()
         }
         private void btnBack_Click(object sender, EventArgs e) => this.Hide();

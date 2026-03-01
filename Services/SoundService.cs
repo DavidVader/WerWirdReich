@@ -112,13 +112,10 @@ namespace WerWirdReich.Services
         /// </summary>
         public static class ButtonSounds
         {
-            public static void Click() => PlaySound("button", 0.7f);
-            public static void Hover() => PlaySound("button_hover", 0.5f);
+            public static void Click() => PlaySound("button", 1.0f);
             public static void Success() => PlaySound("success", 1.0f);
-            public static void Error() => PlaySound("error", 0.8f);
-            public static void Joker() => PlaySound("joker", 0.9f);
-            public static void Money() => PlaySound("money", 0.8f);
-            public static void Correct() => PlaySound("correct", 1.0f);
+            public static void Joker() => PlaySound("joker", 1.0f);
+            public static void Money() => PlaySound("money", 1.0f);
             public static void Wrong() => PlaySound("wrong-answer", 0.8f);
         }
     }

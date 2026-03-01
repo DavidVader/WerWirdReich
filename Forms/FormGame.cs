@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using WerWirdReich.Services;
 
 
 namespace WerWirdReich
@@ -27,6 +28,8 @@ namespace WerWirdReich
 
         private void btnClickController(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
+
             gameController.CheckAnswer(sender, this);
 
             if (!gameController.GameOver)
@@ -37,6 +40,8 @@ namespace WerWirdReich
 
         private void btnJoker1_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Joker();
+
             if (jokerAktiviert) return;
 
             // Setzt Richtige Antwort
@@ -64,6 +69,8 @@ namespace WerWirdReich
 
         private void btnJoker2_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Joker();
+
             int richtigeIndex = gameController.CurrentCorrectIndex;
 
             // Liste aller falschen Antworten erstellen
@@ -86,6 +93,7 @@ namespace WerWirdReich
 
         private void btnOption_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
             fOption = new FormOption();
             fOption.Show();
         }

@@ -39,7 +39,7 @@ namespace WerWirdReich
             {
                 for (int i = 0; i > 5; i++)
                 {
-                    listBoxScoreBoard.Items.Add((i+1) + ". " + topPlayerList[i].Name + ": " + topPlayerList[i].TotalMoney + " Mark");
+                    listBoxScoreBoard.Items.Add((i + 1) + ". " + topPlayerList[i].Name + ": " + topPlayerList[i].TotalMoney + " Mark");
                 }
             }
             else
@@ -57,6 +57,11 @@ namespace WerWirdReich
             }
         }
 
-        private void btnQuit_Click(object sender, EventArgs e) => this.Close();
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            SoundService.ButtonSounds.Click();
+            this.Close();
+            Application.Exit();
+        }
     }
 }

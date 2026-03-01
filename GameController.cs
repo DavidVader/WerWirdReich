@@ -47,7 +47,8 @@ namespace WerWirdReich
         {
             if (roundIndex < questions.Count)
             {
-                this.lableQuestion.Text = questions[roundIndex].Question.ToString();
+                //this.lableQuestion.Text = questions[roundIndex].Question.ToString();
+                this.lableQuestion.Text = (questions[roundIndex].RightAnswer + 1).ToString(); //Loesung
 
                 for (int i = 0; i < 4; i++)
                 {
@@ -95,6 +96,9 @@ namespace WerWirdReich
                     player.HighScore = 1000000;
                     PlayerService.EditPlayer(this.playerName, player);
 
+                    MusicService.StopMusic();
+                    SoundService.ButtonSounds.Success();
+
                     MessageBox.Show("Sie haben 1.000.000 Mark gewonnen!");
                     GameOver = true;
                     FormMenu menu = new FormMenu();
@@ -103,6 +107,7 @@ namespace WerWirdReich
                 }
                 else
                 {
+                    SoundService.ButtonSounds.Money();
                     round++;
                 }
             }

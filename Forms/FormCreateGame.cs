@@ -57,6 +57,7 @@ namespace WerWirdReich
         }
         private void btnStart_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
             CreateOrSelectPlayer();
             game = new FormGame();
             game.Show();
@@ -64,6 +65,7 @@ namespace WerWirdReich
         }
         private void btnBack_Click(object sender, EventArgs e)
         {
+            SoundService.ButtonSounds.Click();
             menu = new FormMenu();
             menu.Show();
             this.Hide();

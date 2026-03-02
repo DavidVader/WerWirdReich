@@ -38,7 +38,11 @@ namespace WerWirdReich
             {
                 playerName = cBoxPlayers.SelectedItem.ToString();
             }
-            else if (this.playerList[0] == null)
+            else if (playerList != null && playerList.Count > 0)
+            {
+                playerName = this.playerList[0].Name;
+            }
+            else
             {
                 playerName = "Spieler1";
                 var player = new Player
@@ -49,10 +53,6 @@ namespace WerWirdReich
                     TotalMoney = 0
                 };
                 PlayerService.CreatePlayer(player);
-            }
-            else
-            {
-                playerName = this.playerList[0].Name;
             }
         }
         private void btnStart_Click(object sender, EventArgs e)

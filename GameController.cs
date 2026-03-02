@@ -16,10 +16,7 @@ namespace WerWirdReich
         private string playerName = FormCreateGame.playerName;
         public bool GameOver { get; private set; } = false;
 
-        public GameController()
-        {
-            MusicService.StartMusic();
-        }
+        public GameController() => MusicService.StartMusic();
 
         public void UpdateGameData(object question, List<Label> lRounds, object lPlayer, List<Button> antworten)
         {

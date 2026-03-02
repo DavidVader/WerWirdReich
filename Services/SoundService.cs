@@ -8,7 +8,7 @@ namespace WerWirdReich.Services
         private static readonly string basePath = Path.Combine(AppContext.BaseDirectory, "Assets", "Sounds");
 
         // Für gleichzeitiges Abspielen mehrerer Sounds
-        private static ConcurrentDictionary<string, WaveOutEvent> activeSounds = new();
+        //private static ConcurrentDictionary<string, WaveOutEvent> activeSounds = new();
 
         static SoundService()
         {

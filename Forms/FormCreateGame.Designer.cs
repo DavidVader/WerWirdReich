@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCreateGame));
             cBoxPlayers = new ComboBox();
             tBoxPlayer = new TextBox();
             btnStart = new Button();
@@ -144,6 +145,7 @@
             Controls.Add(btnStart);
             Controls.Add(tBoxPlayer);
             Controls.Add(cBoxPlayers);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             Name = "FormCreateGame";
             Text = "Spiel Einstellungen";

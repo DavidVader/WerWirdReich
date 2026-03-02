@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOption));
             btnBack = new Button();
             btnMusicOn = new Button();
             btnMusicOff = new Button();
@@ -96,6 +97,7 @@
             Controls.Add(btnMusicOff);
             Controls.Add(btnMusicOn);
             Controls.Add(btnBack);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(2);
             Name = "FormOption";
             Text = "Einstellungen";

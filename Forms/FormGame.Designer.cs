@@ -329,6 +329,7 @@
             Controls.Add(btnOption);
             Controls.Add(labelName);
             Controls.Add(labelQuestion);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(5);
             Name = "FormGame";
             Text = "WER WIRD REICH";

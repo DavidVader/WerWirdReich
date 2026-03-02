@@ -44,8 +44,8 @@ namespace WerWirdReich
         {
             if (roundIndex < questions.Count)
             {
-                //this.lableQuestion.Text = questions[roundIndex].Question.ToString();
-                this.lableQuestion.Text = (questions[roundIndex].RightAnswer + 1).ToString(); //Loesung
+                this.lableQuestion.Text = questions[roundIndex].Question.ToString();
+                //this.lableQuestion.Text = (questions[roundIndex].RightAnswer + 1).ToString(); //Loesung
 
                 for (int i = 0; i < 4; i++)
                 {

@@ -8,7 +8,7 @@ namespace WerWirdReich.Services
         private static WaveOutEvent outputDevice;
         private static readonly string musicFilePath;
         private static bool isPlaying = false;
-        private static float currentVolume = 0.2f;
+        private static float currentVolume = 0.5f;
 
         static MusicService()
         {

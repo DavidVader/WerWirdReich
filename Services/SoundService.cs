@@ -114,8 +114,8 @@ namespace WerWirdReich.Services
         {
             public static void Click() => PlaySound("button", 1.0f);
             public static void Success() => PlaySound("success", 1.0f);
-            public static void Joker() => PlaySound("joker", 1.0f);
-            public static void Money() => PlaySound("money", 1.0f);
+            public static void Joker() => PlaySound("joker", 0.6f);
+            public static void Money() => PlaySound("money", 0.6f);
             public static void Wrong() => PlaySound("wrong-answer", 0.8f);
         }
     }

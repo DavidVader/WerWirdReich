@@ -83,7 +83,7 @@
             labelVolume.Name = "labelVolume";
             labelVolume.Size = new Size(156, 33);
             labelVolume.TabIndex = 4;
-            labelVolume.Text = "20";
+            labelVolume.Text = "50";
             labelVolume.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FormOption

@@ -1,4 +1,3 @@
-using WerWirdReich.Models;
 using WerWirdReich.Services;
 
 namespace WerWirdReich

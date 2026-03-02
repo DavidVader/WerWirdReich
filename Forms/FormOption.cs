@@ -1,15 +1,9 @@
-﻿using NAudio.Wave;
-using WerWirdReich.Services;
+﻿using WerWirdReich.Services;
 
 namespace WerWirdReich
 {
     public partial class FormOption : Form
     {
-        //private readonly string musicFilePath = Path.Combine(AppContext.BaseDirectory, "Assets", "WwMTheme.wav");
-        //private AudioFileReader audioFile;
-        //private WaveOutEvent outputDevice;
-        //private bool isPlaying = false;
-
         public FormOption()
         {
             InitializeComponent();
@@ -44,7 +38,7 @@ namespace WerWirdReich
         {
             SoundService.ButtonSounds.Click();
 
-            MusicService.PauseMusic(); // oder StopMusic()
+            MusicService.PauseMusic();
         }
         private void btnBack_Click(object sender, EventArgs e) => this.Hide();
     }

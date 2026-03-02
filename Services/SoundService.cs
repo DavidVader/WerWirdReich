@@ -1,14 +1,10 @@
 ﻿using NAudio.Wave;
-using System.Collections.Concurrent;
 
 namespace WerWirdReich.Services
 {
     public static class SoundService
     {
         private static readonly string basePath = Path.Combine(AppContext.BaseDirectory, "Assets", "Sounds");
-
-        // Für gleichzeitiges Abspielen mehrerer Sounds
-        //private static ConcurrentDictionary<string, WaveOutEvent> activeSounds = new();
 
         static SoundService()
         {
@@ -18,9 +14,7 @@ namespace WerWirdReich.Services
             }
         }
 
-        /// <summary>
         /// Spielt einen WAV oder MP3 Sound ab
-        /// </summary>
         public static void PlaySound(string soundFileName, float volume = 1.0f)
         {
             try
@@ -80,7 +74,6 @@ namespace WerWirdReich.Services
                 }
             }
         }
-
         private static void PlayMp3File(string path, float volume)
         {
             using (var audioFile = new AudioFileReader(path))
@@ -97,9 +90,7 @@ namespace WerWirdReich.Services
             }
         }
 
-        /// <summary>
         /// Spielt Sound und wartet bis er fertig ist
-        /// </summary>
         public static void PlaySoundSync(string soundFileName, float volume = 1.0f)
         {
             // Synchrone Version - blockiert bis Sound fertig
@@ -107,9 +98,6 @@ namespace WerWirdReich.Services
             task.Wait();
         }
 
-        /// <summary>
-        /// Vordefinierte Button-Sounds
-        /// </summary>
         public static class ButtonSounds
         {
             public static void Click() => PlaySound("button", 1.0f);
